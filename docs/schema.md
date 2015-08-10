@@ -1,38 +1,38 @@
 # Schema Information
 
-## blogs
+## shops
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
-owner_id    | integer   | not null, foreign key (references users)
 title       | string    | not null
 
-## followings
+## subscriptions
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
-blog_id     | integer   | not null, foreign key (references blogs)
-follower_id | integer   | not null, foreign key (references users)
+shop_id     | integer   | not null, foreign key (references shops)
+user_id     | integer   | not null, foreign key (references users)
 
-## posts
+## items
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
-author_id   | integer   | not null, foreign key (references users)
+shop_id     | integer   | not null, foreign key (references shops)
 title       | string    | not null
-body        | string    |
+description | string    |
+price       | decimal   | precision: 8, scale: 2
 
 ## tags
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
-label       | string    | not null, unique
+name        | string    | not null, unique
 
 ## taggings
 column name | data type | details
 ------------|-----------|-----------------------
 id          | integer   | not null, primary key
-post_id     | integer   | not null, foreign key (references posts)
+shop_id     | integer   | not null, foreign key (references shops)
 tag_id      | integer   | not null, foreign key (references tags)
 
 ## users
@@ -42,4 +42,3 @@ id              | integer   | not null, primary key
 email           | string    | not null, unique
 password_digest | string    | not null
 session_token   | string    | not null, unique
-

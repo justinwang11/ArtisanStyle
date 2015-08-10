@@ -1,24 +1,23 @@
-# Flux-capacitr
+# ArtisanStyle
 
 [Heroku link][heroku]
 
 [heroku]: http://flux-capacitr.herokuapp.com
 
 ## Minimum Viable Product
-Flux-capacitr is a clone of Tumblr built on Rails and Backbone. Users can:
+ArtisanStyle is a clone of Etsy built on Rails and Backbone. Users can:
 
 <!-- This is a Markdown checklist. Use it to keep track of your progress! -->
 
-- [x] Create accounts
-- [x] Create sessions (log in)
-- [x] Create blogs
-- [x] Create blog posts
-- [ ] View blogs and posts
-- [ ] Subscribe to blogs
-- [ ] View a feed of subscribed blogs
-- [ ] Tag blog posts
-- [ ] Search for blogs by title
-- [ ] Search for posts by tag
+- [ ] Create accounts
+- [ ] Create sessions (log in)
+- [ ] Have a personalized feed of shops from subscriptions
+- [ ] View shops
+- [ ] View items in shops
+- [ ] Subscribe to shops
+- [ ] Add items to a shopping cart
+- [ ] Checkout
+- [ ] Search for shops and items by title and tag
 
 ## Design Docs
 * [View Wireframes][views]
@@ -73,14 +72,12 @@ collections, but they will fetch from the new `search` routes.
 [Details][phase-five]
 
 ### Bonus Features (TBD)
-- [ ] "Like" button and counter for posts
-- [ ] Custom blog urls
-- [ ] Pagination/infinite scroll
-- [ ] Activity history (e.g. likes, reblogs, taggings)
-- [ ] Post types (image posts, quote posts, etc)
-- [ ] Reblogging
-- [ ] Multiple sessions/session management
 - [ ] User avatars
+- [ ] Pagination/infinite scroll
+- [ ] Users create shops of their own
+- [ ] Filepicker to have users upload pictures of items to sell
+- [ ] Recommendations for users based on past purchases
+- [ ] Multiple sessions/session management
 - [ ] Typeahead search bar
 
 [phase-one]: ./docs/phases/phase1.md
@@ -88,4 +85,3 @@ collections, but they will fetch from the new `search` routes.
 [phase-three]: ./docs/phases/phase3.md
 [phase-four]: ./docs/phases/phase4.md
 [phase-five]: ./docs/phases/phase5.md
-
