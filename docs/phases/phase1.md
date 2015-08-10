@@ -1,28 +1,38 @@
-# Phase 1: User Authentication, Basic Blogs and Posts
+# Phase 1: User Authentication, Viewing Shops and Items
 
 ## Rails
 ### Models
 * User
-* Blog
-* Post
+* Shop
+* Item
 
 ### Controllers
 * UsersController (create, new)
 * SessionsController (create, new, destroy)
-* BlogsController (create, new, show)
-* PostsController (create, new, show)
+* ShopsController (show)
+* ItemsController (show)
+* Api::ShopsController (show)
+* Api::ItemsController (show)
 
 ### Views
 * users/new.html.erb
 * session/new.html.erb
-* blogs/new.html.erb
-* blogs/show.html.erb
+* shops/show.html.erb
+* items/show.html.erb
+* shops/show.json.jbuilder
 
 ## Backbone
 ### Models
+* Shop
+* Item
 
 ### Collections
+* Shops
+* Items
 
 ### Views
+* ItemShow
+* ItemShopIndexItem
+* ShopShow (composite, contains ItemShopIndexItem)
 
 ## Gems/Libraries

@@ -13,6 +13,13 @@ id          | integer   | not null, primary key
 shop_id     | integer   | not null, foreign key (references shops)
 user_id     | integer   | not null, foreign key (references users)
 
+## purchases
+column name | data type | details
+------------|-----------|-----------------------
+id          | integer   | not null, primary key
+item_id     | integer   | not null, foreign key (references items)
+user_id     | integer   | not null, foreign key (references users)
+
 ## items
 column name | data type | details
 ------------|-----------|-----------------------

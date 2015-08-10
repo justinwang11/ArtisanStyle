@@ -1,29 +1,22 @@
-# Phase 2: Viewing Blogs and Posts
+# Phase 2: Subscriptions and the Landing Page
 
 ## Rails
 ### Models
 
 ### Controllers
-Api::BlogsController (create, destroy, index, show)
-Api::PostsController (create, destroy, show, update)
+Api::ItemsController (feed)
 
 ### Views
-* blogs/show.json.jbuilder
+* items/feed.json.jbuilder
 
 ## Backbone
 ### Models
-* Blog (parses nested `posts` association)
-* Post
 
 ### Collections
-* Blogs
-* Posts
 
 ### Views
-* BlogForm
-* BlogShow (composite view, contains PostsIndex subview)
-* PostsIndex (composite view, contains PostsIndexItem subviews)
-* PostsIndexItem
-* PostShow
+* ItemFeedIndexItem
+* FeedShow (composite, contains ItemFeedIndexItems)
+
 
 ## Gems/Libraries

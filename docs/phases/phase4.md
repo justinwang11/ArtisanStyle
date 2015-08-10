@@ -1,10 +1,11 @@
-# Phase 4: User Feeds
+# Phase 4: Searching for Shops and Items
 
 ## Rails
 ### Models
 
 ### Controllers
-Api::PostsController (feed)
+Api::ShopsController (search)
+Api::ItemsController (search)
 
 ### Views
 posts/feed.json.jbuilder
@@ -15,6 +16,7 @@ posts/feed.json.jbuilder
 ### Collections
 
 ### Views
-* FeedShow (composite view, contains PostsIndex subview)
+* ShopSearchItem
+* SearchShow
 
 ## Gems/Libraries
