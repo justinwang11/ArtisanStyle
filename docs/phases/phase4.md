@@ -4,7 +4,6 @@
 ### Models
 
 ### Controllers
-Api::ShopsController (search)
 Api::ItemsController (search)
 
 ### Views
