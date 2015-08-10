@@ -6,21 +6,21 @@
 ## Feed Show (landing page)
 ![feed-show]
 
-## Blog Show
-![blog-show]
+## Shop Show
+![shop-show]
 
-## Post Show
-![post-show]
+## Item Show
+![item-show]
 
-## Post Form
-![post-form]
+## Shopping Cart
+![shopping-cart]
 
 ## Search Results
 ![search-results]
 
 [new-session]: ./wireframes/new_session.png
 [feed-show]: ./wireframes/feed_show.png
-[blog-show]: ./wireframes/blog_show.png
-[post-show]: ./wireframes/post_show.png
-[post-form]: ./wireframes/post_form.png
+[shop-show]: ./wireframes/shop_show.png
+[item-show]: ./wireframes/item_show.png
+[shopping-cart]: ./wireframes/shopping_cart.png
 [search-results]: ./wireframes/search_results.png
