@@ -1,7 +1,7 @@
 ArtisanStyle.Collections.Shops = Backbone.Collection.extend({
 
   model: ArtisanStyle.Models.Shop,
-  url: 'api/shops',
+  url: '/api/shops',
 
   getOrFetch: function (id) {
     var shop = this.get(id);

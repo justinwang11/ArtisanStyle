@@ -15,3 +15,16 @@
  */
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+.navbar {
+  display: block;
+}
+
+.navbar-brand{
+  font-family: Poiret One;
+  font-size: 36px;
+}
+
+.navbar li~li {
+  border-left: 1px solid #CCC;
+}

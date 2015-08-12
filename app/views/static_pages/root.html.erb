@@ -5,4 +5,16 @@
 <div class="backdrop">
   <div id="main"></div>
 </div>
-<script>$(ArtisanStyle.initialize);</script>
+
+<script>
+  $(function () {
+    ArtisanStyle.CURRENT_USER = {
+      username: "<%= current_user.username %>"
+    };
+
+    // You could also do something like this (careful, the ERB tag has been escaped):
+    // BackboneDemo.CURRENT_USER = JSON.parse("<%%= current_user.to_json %>");
+
+    ArtisanStyle.initialize();
+  });
+</script>

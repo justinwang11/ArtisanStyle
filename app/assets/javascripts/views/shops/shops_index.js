@@ -14,7 +14,6 @@ ArtisanStyle.Views.ShopsIndex = Backbone.CompositeView.extend({
   },
 
   render: function () {
-    debugger;
     var content = this.template({
       shops: this.collection
     });

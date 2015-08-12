@@ -1,6 +1,6 @@
 ArtisanStyle.Models.Shop = Backbone.Model.extend({
 
-  urlRoot: 'api/shops',
+  urlRoot: '/api/shops',
 
   items: function () {
     if (!this._items) {

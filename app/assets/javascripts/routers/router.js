@@ -2,7 +2,7 @@ ArtisanStyle.Routers.Router = Backbone.Router.extend({
 
   initialize: function (options) {
     this.$rootEl = options.$rootEl;
-    this.collection = new ArtisanStyle.Collections.Shops();
+    this.collection = options.collection;
   },
 
   routes: {

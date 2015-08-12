@@ -1,15 +1,12 @@
-<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-
 <div class="signin">
-  <img src="/images/background.jpeg" class="bgimg" alt="landing backround" height="100%" width="100%">
+  <img src="/images/signin.jpeg" class="bgimg" alt="landing backround" height="100%" width="100%">
 
   <div class="title">
     <h1>ArtisanStyle</h1>
   </div>
 
   <div class="description">
-    <h3>Shop directly from people all over the world</h3>
+    <h3>The world's handmade items are at your fingertips</h3>
   </div>
 
   <form action="<%= session_url %>" method="post">
@@ -31,7 +28,7 @@
 
     <div class="register">
       <span>Don't have an account?</span>
-      <button class="registerbtn btn-default">Register</button>
+      <a href="/users/new" class="registerbtn btn btn-default">Register</a>
     </div>
 
   </form>
