@@ -1,3 +1,111 @@
 // Place all the styles related to the Sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.signin {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.bgimg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+}
+
+.title {
+  font-family: Poiret One;
+  position: relative;
+  display: block;
+  font-size: 48px;
+  color: #FFF;
+  z-index: 1;
+}
+
+.description {
+  font: Roboto;
+  position: relative;
+  display: block;
+  font-size: 36px;
+  color: #FFF;
+  z-index: 1;
+}
+
+form {
+  margin: 0 auto;
+  width: 20%;
+  padding: 10px;
+  position: relative;
+  top: 15%;
+  color: #FFF;
+}
+
+.inputs {
+  display: block;
+  position: relative;
+  height: 101px;
+}
+
+.buttons {
+  margin: 0;
+  position: relative;
+  width: 100%;
+  transform: translateY(10px);
+}
+
+.username {
+  position: relative;
+  float: right;
+  width: 100%;
+  border: 0 none;
+  border-bottom: 1px solid #CCC;
+  border-radius: 1px;
+  color: #636363;
+  height: 50px;
+}
+
+.password {
+  position: relative;
+  float: right;
+  width: 100%;
+  border: 0 none;
+  border-radius: 1px;
+  color: #636363;
+  height: 50px;
+}
+
+form .signinbtn {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  background: #3ED494;
+  border: 0 none;
+  border-radius: 1px;
+  height: 50px;
+  color: #FFF;
+}
+
+form .signinbtnguest {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  background: #3ED494;
+  border: 0 none;
+  border-radius: 1px;
+  height: 50px;
+  color: #FFF;
+  transform: translateY(5px);
+}
+
+form .registerbtn {
+  background: #00CBE8;
+  float: right;
+  border: 0 none;
+  border-radius: 1px;
+  height: 40px;
+  width: 100px;
+
+}
