@@ -2,7 +2,7 @@
 
 [Heroku link][heroku]
 
-[heroku]: http://i.imgur.com/h4Uaq.png
+[heroku]: https://artisanstyle.herokuapp.com/
 
 ## Minimum Viable Product
 ArtisanStyle is a clone of Etsy built on Rails and Backbone. Users can:
