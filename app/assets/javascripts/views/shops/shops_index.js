@@ -2,6 +2,7 @@ ArtisanStyle.Views.ShopsIndex = Backbone.CompositeView.extend({
   template: JST['shops/index'],
 
   initialize: function () {
+    // this.collection.each(this.addItem.bind(this));
     this.listenTo(this.collection, 'sync', this.render);
     this.listenTo(this.collection, 'add', this.addItem);
   },
@@ -18,6 +19,7 @@ ArtisanStyle.Views.ShopsIndex = Backbone.CompositeView.extend({
       shops: this.collection
     });
     this.$el.html(content);
+    this.attachSubviews();
     return this;
   }
 });

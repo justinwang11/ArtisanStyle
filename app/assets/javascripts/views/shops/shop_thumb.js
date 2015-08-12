@@ -3,7 +3,7 @@ ArtisanStyle.Views.ShopThumb = Backbone.View.extend({
   template: JST['shops/thumb'],
 
   initialize: function () {
-    this.collection = this.model.items();
+    this.listenTo(this.model, "sync", this.render);
   },
 
   render: function () {
