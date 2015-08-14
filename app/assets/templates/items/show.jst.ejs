@@ -11,12 +11,23 @@
   <div class="iteminformation">
     <p><%= item.escape('name') %></p>
     <p>Sold By:
-      <a href="#shops/<%= item.escape('shop_id') %>"> 
+      <a href="#shops/<%= item.escape('shop_id') %>">
         <%= item.escape('shop_name') %>
       </a>
     </p>
+
+    <div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href="#">JavaScript</a></li>
+  </ul>
+</div>
+
     <p class="price"><%= item.escape('price_string') %></p>
     <p><%= item.escape('description') %></p>
-    <button class="btn btn-default">Add to Cart</button>
+    <button class="addtocart btn btn-default">Add to Cart</button>
   </div>
 </div>

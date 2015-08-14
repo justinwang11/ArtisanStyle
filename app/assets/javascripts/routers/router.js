@@ -8,7 +8,8 @@ ArtisanStyle.Routers.Router = Backbone.Router.extend({
   routes: {
     "": "shopsIndex",
     "shops/:id": "shopShow",
-    "items/:id": "itemShow"
+    "items/:id": "itemShow",
+    "cart": "cartIndex"
   },
 
   shopsIndex: function () {

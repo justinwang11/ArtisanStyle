@@ -24,5 +24,5 @@
 //= require_tree .
 //= require bootstrap-sprockets
 //= require bootstrap
-
+//= require js-cookie
 // require turbolinks
