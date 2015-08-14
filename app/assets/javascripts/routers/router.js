@@ -33,6 +33,13 @@ ArtisanStyle.Routers.Router = Backbone.Router.extend({
     this._swapView(showView);
   },
 
+  cartIndex: function () {
+    var cartcookie = Cookies.getJSON('ArtisanStyleCart');
+    _.each(Object.keys(cartcookie), parseInt());
+    var indexView = new ArtisanStyle.Views.CartIndex({ collection: items });
+    this._swapView(indexView);
+  },
+
   _swapView: function (view) {
     this._currentView && this._currentView.remove();
     this._currentView = view;

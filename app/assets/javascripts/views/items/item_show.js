@@ -14,13 +14,20 @@ ArtisanStyle.Views.ItemShow = Backbone.View.extend({
     event.preventDefault();
     var item_id = this.model.get('id');
     var quantity = 1;
-    var value = Cookies.getJSON('ArtisanStyleCart');
-    if (value) {
-      value.item_id += quantity;
-      Cookies.set('ArtisanStyleCart', value);
+    var cookies = Cookies.getJSON('ArtisanStyleCart');
+    if (cookies === undefined ) {
+      cookies = {};
+      cookies[item_id] = quantity;
+      Cookies.set('ArtisanStyleCart', cookies);
+    } else if (!cookies[item_id]) {
+      cookies[item_id] = quantity;
+      Cookies.set('ArtisanStyleCart', cookies);
     } else {
-      Cookies.set('ArtisanStyleCart', { item_id: quantity });
+      cookies[item_id] += quantity;
+      Cookies.set('ArtisanStyleCart', cookies);
     }
+    console.log(cookies);
+    debugger;
   },
 
   render: function () {
