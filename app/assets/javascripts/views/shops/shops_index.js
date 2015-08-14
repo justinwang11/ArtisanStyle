@@ -5,6 +5,7 @@ ArtisanStyle.Views.ShopsIndex = Backbone.CompositeView.extend({
     // this.collection.each(this.addItem.bind(this));
     this.listenTo(this.collection, 'sync', this.render);
     this.listenTo(this.collection, 'add', this.addItem);
+    this.collection.each(this.addItem.bind(this));
   },
 
   addItem: function (item) {
