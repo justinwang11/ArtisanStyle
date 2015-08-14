@@ -7,8 +7,7 @@ ArtisanStyle.Views.ShopThumb = Backbone.View.extend({
   },
 
   render: function () {
-    debugger;
-    var content = this.template({ shop: this.model });
+    var content = this.template({ shop: this.model, items: this.model.items() });
     this.$el.html(content);
     return this;
   }

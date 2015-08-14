@@ -1,0 +1,22 @@
+<div class="shopbanner">
+    <img src="<%= item.escape('shop_images') %>" />
+    <p><%= item.escape('shop_name') %></p>
+    <br>
+    <button class="btn btn-default">Favorite Shop</button>
+</div>
+<div class="itemdiv">
+  <div class="itempic">
+    <img src="<%= item.escape('images') %>"/>
+  </div>
+  <div class="iteminformation">
+    <p><%= item.escape('name') %></p>
+    <p>Sold By:
+      <a href="#shops/<%= item.escape('shop_id') %>"> 
+        <%= item.escape('shop_name') %>
+      </a>
+    </p>
+    <p class="price"><%= item.escape('price_string') %></p>
+    <p><%= item.escape('description') %></p>
+    <button class="btn btn-default">Add to Cart</button>
+  </div>
+</div>

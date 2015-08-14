@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   namespace :api, defaults: { format: :json } do
     resources :shops, only: [:index, :show]
-    resources :items, only: [:show]
+    resources :items, only: [:index, :show]
   end
 
 end

@@ -1,0 +1,14 @@
+<li class="itemthumb">
+  <div class="itempic">
+    <a href="#items/<%= item.escape('id') %>">
+      <img src="<%= item.escape('images') %>"/>
+    </a>
+  </div>
+  <div class="iteminfo">
+    <a class="itemlink" href="#items/<%= item.escape('id') %>"><%= item.escape('name') %></a>
+    <div class="shopinfoprice">
+      <a href="#shops/<%= shop.escape('id') %>"><%= shop.escape('name') %></a>
+      <span class="itemprice"><%= item.escape('price_string') %></span>
+    </div>
+  </div>
+</li>

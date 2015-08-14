@@ -16,8 +16,14 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+#nav {
+  overflow: hidden;
+  background: #EDF4F4;
+}
+
 .navbar {
   display: block;
+  height: 100%;
 }
 
 .navbar-brand{
@@ -27,4 +33,8 @@
 
 .navbar li~li {
   border-left: 1px solid #CCC;
+}
+
+#main {
+  background: #EDF4F4;
 }

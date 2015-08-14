@@ -10,14 +10,15 @@ ArtisanStyle.Views.ShopShow = Backbone.CompositeView.extend({
 
   addItem: function (item) {
     var view = new ArtisanStyle.Views.ItemThumb({
-      model: item
+      model: item,
+      shop: this.model
     });
     this.addSubview('#items', view);
   },
 
   render: function () {
     var content = this.template({
-      board: this.model
+      shop: this.model
     });
     this.$el.html(content);
     this.renderItems();

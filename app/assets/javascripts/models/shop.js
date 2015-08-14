@@ -9,7 +9,7 @@ ArtisanStyle.Models.Shop = Backbone.Model.extend({
 
     return this._items;
   },
-
+  
   parse: function (payload) {
     if (payload.items) {
       this.items().set(payload.items, { parse: true });

@@ -4,3 +4,175 @@
 h1 {
   display: block;
 }
+
+.welcome {
+  width: 1000px;
+  height: 70px;
+  margin: 0 auto;
+  position: relative;
+  background: #EDF4F4;
+}
+
+.welcome .text {
+  display: block;
+  float: left;
+  position: relative;
+  font-family: Roboto;
+  font-size: 40px;
+}
+
+#shops {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden
+}
+
+.shop-card {
+  display: block;
+  height: 300px;
+  width: 300px;
+  border: 1px solid #CCC;
+  border-radius: 3px;
+  position: relative;
+  float: left;
+  margin: 30px;
+  background: #FFF;
+}
+
+.item-pics {
+  display: block;
+  height: 244px;
+  width: 298px;
+  border-bottom: 1px solid #CCC;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.item-img {
+  display: block;
+  height: 50%;
+  width: 50%;;
+  border: 0 none;
+  position: relative;
+  float: left;
+}
+
+.shop-info {
+  display: block;
+  height: 53px;
+  width: 298px;
+  border: 0 none;
+  position: relative;
+  overflow: hidden;
+}
+
+.shop-img {
+  height: 36px;
+  width: 36px;
+  border: 0 none;
+  border-radius: 3px;
+  position: relative;
+  float: left;
+  top: 12.5%;
+  margin-left: 10px;
+}
+
+.shop-info .shopname {
+  display: block;
+  transform: translateY(15px) translateX(5px);
+  float: left;
+}
+
+.head {
+  display: block;
+  margin: 0 auto;
+  height: 300px;
+  width: 1000px;
+  border: 0 none;
+  position: relative;
+  overflow: hidden;
+}
+
+.head img {
+  display: block;
+  height: 225px;
+  width: 100%;
+  position: relative;
+}
+
+.head .shopname {
+  display: block;
+  height: 75px;
+  width: 100%;
+  position: relative;
+  font-size: 40px;
+  font-family: Roboto;
+}
+
+.head .shopname .togglesub {
+  float: right;
+  margin: 5px;
+}
+
+#items {
+  display: block;
+  margin: 0 auto;
+  width: 76%;
+  position: relative;
+  overflow: hidden;
+}
+
+.itemthumb {
+  margin: 7px 4px 7px 4px;
+  position: relative;
+  height: 180px;
+  width: 170px;
+  padding: 6px;
+  border: 1px solid #CCC;
+  float: left;
+  overflow: hidden;
+  background: #FFF;
+}
+
+.itemthumb .itempic {
+  width: 100%;
+  height: 135px;
+  overflow: hidden;
+}
+
+.itempic img {
+  width: 100%;
+  height: 100%;
+}
+
+.itemthumb .iteminfo {
+  display: block;
+  height: 40px;
+  width: 100%;
+}
+
+.iteminfo .itemlink {
+  display: block;
+  height: 20px;
+  width: 100%;
+}
+
+.iteminfo .shopinfoprice {
+  display: block;
+  height: 20px;
+  width: 100%;
+}
+
+.shopinfoprice a {
+  float: left;
+  font-family: Roboto;
+  font-size: 12px;
+  color: #6A6A6A;
+}
+
+.shopinfoprice .itemprice {
+  float: right;
+  color: #19BF19;
+}

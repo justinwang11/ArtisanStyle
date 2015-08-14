@@ -1,5 +1,5 @@
 ArtisanStyle.Models.Item = Backbone.Model.extend({
 
-  urlRoot: 'api/items'
+  urlRoot: '/api/items'
 
 });

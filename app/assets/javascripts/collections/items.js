@@ -1,7 +1,7 @@
 ArtisanStyle.Collections.Items = Backbone.Collection.extend({
 
   model: ArtisanStyle.Models.Item,
-  url: 'api/items',
+  url: '/api/items',
 
   getOrFetch: function (id) {
     var item = this.get(id);

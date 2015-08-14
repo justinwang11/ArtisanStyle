@@ -1,4 +1,15 @@
-<li>
-  <%= shop.escape('name') %>
-</li>
-<%= shop.escape('images') %>
+<div class="shop-card">
+  <div class="item-pics">
+    <% items.each(function(item) { %>
+      <a href="#items/<%= item.escape('id') %>">
+        <img class="item-img" src="<%= item.escape('images') %>"/>
+      </a>
+    <% }); %>
+  </div>
+  <div class="shop-info">
+    <a href="#shops/<%= shop.escape('id') %>">
+      <img class="shop-img" src="<%= shop.escape('images') %>" alt="" />
+    </a>
+    <a class="shopname" href="#shops/<%= shop.escape('id') %>"><%= shop.escape('name') %></a>
+  </div>
+</div>
