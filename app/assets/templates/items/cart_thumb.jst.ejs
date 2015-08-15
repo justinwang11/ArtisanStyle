@@ -1,0 +1,18 @@
+<div class="itemtthumb">
+
+  <div class="thumbheader">
+    <p>Order from: <%= item.escape('shop_name') %></p>
+  </div>
+
+  <div class="orderinfo">
+    <img src="<%= item.escape('images') %>"/>
+    <a href="#items/<%= item.escape('id') %>"><%= item.escape('name') %></a>
+    <p><%= item.escape('price_string') %></p>
+  </div>
+
+  <div class="checkout">
+    <p>Your total for this item is <%= item.escape('price_string') %></p>
+    <button class="checkoutbtn btn btn-default">Purchase Item</button>
+  </div>
+
+</div>

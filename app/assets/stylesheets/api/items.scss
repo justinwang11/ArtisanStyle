@@ -75,3 +75,47 @@
   color: #FFF;
   width: 100%;
 }
+
+.itemtthumb {
+  margin: 0 auto;
+  border: 1px solid #CCC;
+  border-radius: 3px;
+  background-color: white;
+  position: relative;
+  width: 1000px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.itemtthumb .thumbheader {
+  width: 100%;
+  height: 15%;
+  float: left;
+}
+
+.itemtthumb .orderinfo {
+  width: 75%;
+  height: 85%;
+  float: left;
+}
+
+.orderinfo img {
+  height: 75%;
+  width: 25%;
+  margin: 20px;
+}
+
+.itemtthumb .checkout {
+  width: 25%;
+  height: 85%;
+  float: left;
+}
+
+.checkout button {
+  border: 0 none;
+  border-radius: 1px;
+  color: white;
+  background: #72CD58;
+  width: 90%;
+  margin: 0 auto;
+}

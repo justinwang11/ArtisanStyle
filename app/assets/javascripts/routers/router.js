@@ -3,6 +3,7 @@ ArtisanStyle.Routers.Router = Backbone.Router.extend({
   initialize: function (options) {
     this.$rootEl = options.$rootEl;
     this.collection = options.collection;
+
   },
 
   routes: {
@@ -34,9 +35,16 @@ ArtisanStyle.Routers.Router = Backbone.Router.extend({
   },
 
   cartIndex: function () {
-    var cartcookie = Cookies.getJSON('ArtisanStyleCart');
-    _.each(Object.keys(cartcookie), parseInt());
-    var indexView = new ArtisanStyle.Views.CartIndex({ collection: items });
+    var cartCookie = Cookies.getJSON('ArtisanStyleCart');
+    var keys = Object.keys(cartCookie);
+    var itemIdArray = [];
+    for (var i = 0; i < keys.length; i++) {
+      itemIdArray.push(parseInt(keys[i]));
+    }
+
+    var items = new ArtisanStyle.Collections.Items();
+    items.fetch({data: {query: itemIdArray}, processData: true });
+    var indexView = new ArtisanStyle.Views.CartIndex({ cartItems: items });
     this._swapView(indexView);
   },
 
