@@ -76,8 +76,14 @@
   width: 100%;
 }
 
-.itemtthumb {
+.shoppingcart {
+  width: 1000px;
   margin: 0 auto;
+  font-family: Roboto;
+}
+
+.itemtthumb {
+  margin: 20px auto;
   border: 1px solid #CCC;
   border-radius: 3px;
   background-color: white;
@@ -91,18 +97,44 @@
   width: 100%;
   height: 15%;
   float: left;
+  border-bottom: 1px solid #CCC;
+  background-color: #CCC;
+  font-size: 24px;
 }
 
 .itemtthumb .orderinfo {
   width: 75%;
   height: 85%;
   float: left;
+  position: relative;
+  border-right: 1px solid #CCC;
+  padding: 20px;
 }
 
 .orderinfo img {
-  height: 75%;
-  width: 25%;
-  margin: 20px;
+  float: left;
+  height: 100%;
+  width: 30%;
+  margin: 0 none;
+}
+
+.orderinfo .itemlink {
+  float: left;
+  width: 70%;
+  height: 40%;
+  font-size: 24px;
+}
+
+.orderinfo .itemdesc {
+  float: left;
+  width: 70%;
+  height: 40%;
+}
+
+.orderinfo .itemprice {
+  float: left;
+  width: 70%;
+  height: 20%;
 }
 
 .itemtthumb .checkout {
@@ -117,5 +149,5 @@
   color: white;
   background: #72CD58;
   width: 90%;
-  margin: 0 auto;
+  margin: 10px;
 }
