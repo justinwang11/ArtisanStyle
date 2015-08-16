@@ -102,6 +102,18 @@
   font-size: 24px;
 }
 
+.thumbheader p {
+  float: left;
+}
+
+.thumbheader button {
+  float: right;
+  border-radius: 1px;
+  border: 0 none;
+  margin: 7px;
+  height: 75%;
+}
+
 .itemtthumb .orderinfo {
   width: 75%;
   height: 85%;
