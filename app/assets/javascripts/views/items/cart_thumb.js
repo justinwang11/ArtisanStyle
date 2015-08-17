@@ -12,8 +12,14 @@ ArtisanStyle.Views.CartThumb = Backbone.View.extend({
   },
 
   render: function () {
-    var content = this.template({ item: this.model });
+    var cookies = Cookies.getJSON('ArtisanStyleCart');
+    var quantity = cookies[this.model.id];
+    var content = this.template({
+      item: this.model,
+      quantity: quantity
+    });
     this.$el.html(content);
+    this.$el.find("select.itemquantity").val(quantity);
     return this;
   },
 

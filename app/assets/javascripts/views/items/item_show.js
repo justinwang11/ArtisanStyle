@@ -13,7 +13,7 @@ ArtisanStyle.Views.ItemShow = Backbone.View.extend({
   addItem: function (event) {
     event.preventDefault();
     var item_id = this.model.get('id');
-    var quantity = 1;
+    var quantity = parseInt($(".itemquantity").val());
     var cookies = Cookies.getJSON('ArtisanStyleCart');
     if (cookies === undefined ) {
       cookies = {};

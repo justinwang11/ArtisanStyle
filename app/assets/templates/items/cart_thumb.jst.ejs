@@ -6,13 +6,25 @@
         <%= item.escape('shop_name') %>
       </a>
     </p>
-    <button class="removeFromCart btn btn-default">Remove From Cart</button>
+    <button class="removeFromCart btn btn-default">&times;</button>
   </div>
 
   <div class="orderinfo">
     <img src="<%= item.escape('images') %>"/>
     <a class="itemlink" href="#items/<%= item.escape('id') %>"><%= item.escape('name') %></a>
     <p class="itemdesc"><%= item.escape("description") %></p>
+    <select class="itemquantity">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+      <option>6</option>
+      <option>7</option>
+      <option>8</option>
+      <option>9</option>
+      <option>10</option>
+    </select>
     <p class="itemprice"><%= item.escape('price_string') %></p>
   </div>
 

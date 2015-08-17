@@ -36,15 +36,20 @@ ArtisanStyle.Routers.Router = Backbone.Router.extend({
 
   cartIndex: function () {
     var cartCookie = Cookies.getJSON('ArtisanStyleCart');
-    var keys = Object.keys(cartCookie);
-    var itemIdArray = [];
-    for (var i = 0; i < keys.length; i++) {
-      itemIdArray.push(parseInt(keys[i]));
+    if (cartCookie === undefined || Object.keys(cartCookie).length === 0) {
+      var emptyView = new ArtisanStyle.Views.EmptyCart();
+      this._swapView(emptyView);
+    } else {
+      var keys = Object.keys(cartCookie);
+      var itemIdArray = [];
+      for (var i = 0; i < keys.length; i++) {
+        itemIdArray.push(parseInt(keys[i]));
+      }
+      var items = new ArtisanStyle.Collections.Items();
+      items.fetch({data: {query: itemIdArray}, processData: true });
+      var indexView = new ArtisanStyle.Views.CartIndex({ cartItems: items });
+      this._swapView(indexView);
     }
-    var items = new ArtisanStyle.Collections.Items();
-    items.fetch({data: {query: itemIdArray}, processData: true });
-    var indexView = new ArtisanStyle.Views.CartIndex({ cartItems: items });
-    this._swapView(indexView);
   },
 
   _swapView: function (view) {
