@@ -26,7 +26,7 @@ ArtisanStyle.Views.ItemShow = Backbone.View.extend({
       cookies[item_id] += quantity;
       Cookies.set('ArtisanStyleCart', cookies);
     }
-    console.log(cookies);
+    Backbone.history.navigate("/cart", { trigger: true });
   },
 
   render: function () {

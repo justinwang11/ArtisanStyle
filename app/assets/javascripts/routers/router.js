@@ -41,7 +41,6 @@ ArtisanStyle.Routers.Router = Backbone.Router.extend({
     for (var i = 0; i < keys.length; i++) {
       itemIdArray.push(parseInt(keys[i]));
     }
-
     var items = new ArtisanStyle.Collections.Items();
     items.fetch({data: {query: itemIdArray}, processData: true });
     var indexView = new ArtisanStyle.Views.CartIndex({ cartItems: items });

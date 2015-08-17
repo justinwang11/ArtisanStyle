@@ -5,7 +5,7 @@ ArtisanStyle.Views.CartIndex = Backbone.CompositeView.extend({
   initialize: function (options) {
     // this.collection.each(this.addItem.bind(this));
     this.cartItems = options.cartItems;
-    this.listenTo(this.cartItems, 'sync', this.render);
+    this.listenTo(this.cartItems, 'sync add change', this.render);
     this.listenTo(this.cartItems, 'add', this.addItem);
     _.each(this.cartItems, this.addItem.bind(this));
   },

@@ -22,7 +22,6 @@
 //= require_tree ./views
 //= require_tree ./routers
 //= require_tree .
-//= require bootstrap-sprockets
 //= require bootstrap
 //= require js-cookie
 // require turbolinks

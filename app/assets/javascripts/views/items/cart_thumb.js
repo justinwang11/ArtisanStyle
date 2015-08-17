@@ -23,6 +23,7 @@ ArtisanStyle.Views.CartThumb = Backbone.View.extend({
     var cookies = Cookies.getJSON('ArtisanStyleCart');
     delete cookies[item_id];
     Cookies.set('ArtisanStyleCart', cookies);
+    Backbone.history.loadUrl(Backbone.history.fragment);
   },
 
   removeItem: function (event) {
@@ -31,6 +32,7 @@ ArtisanStyle.Views.CartThumb = Backbone.View.extend({
     var cookies = Cookies.getJSON('ArtisanStyleCart');
     delete cookies[item_id];
     Cookies.set('ArtisanStyleCart', cookies);
+    Backbone.history.loadUrl(Backbone.history.fragment);
   }
 
 });
