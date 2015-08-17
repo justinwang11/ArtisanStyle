@@ -6,8 +6,13 @@ class Shop < ActiveRecord::Base
 
   has_many :images, as: :imageable
 
-  def image_urls
+  has_many :banners
+
+  def image_url
     images.pluck(:url)
   end
 
+  def banner_url
+    banners.pluck(:url)
+  end
 end

@@ -24,15 +24,25 @@
 .navbar {
   display: block;
   height: 100%;
+  z-index: 100;
+  border-bottom: 0 solid;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1),0 0 0 1px rgba(0, 0, 0, 0.05);
 }
 
-.navbar-brand{
+.navbar-default .navbar-brand {
   font-family: Poiret One;
   font-size: 36px;
+  color: #f45800;
 }
 
 .navbar li~li {
   border-left: 1px solid #CCC;
+}
+
+.navbar-form button {
+  background: -webkit-linear-gradient(top, #98d0e0 2%, #68b8d1 8%, #4fa9c6 58%, #4fa9c6 95%, #4ca4c0);
+  border-color: #54acc7 #4ca0ba #398a9d;
+  color: white;
 }
 
 #main {
