@@ -19,9 +19,10 @@
         </div>
         <button class="searchbutton btn btn-default">Search</button>
       </form>
+
       <ul class="nav navbar-nav">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Browse <span class="caret"></span></a>
+        <li class="browse dropdown">
+          <a href="#" class="browser dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Browse <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -33,11 +34,13 @@
           </ul>
         </li>
       </ul>
+
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Favorites</a></li>
         <li><a href="#cart">Shopping Cart</a></li>
         <li><a href="javascript:void(0)" class="signoutbtn"> Sign Out <%= ArtisanStyle.CURRENT_USER.username %></a></li>
       </ul>
+      
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
