@@ -36,12 +36,12 @@
 
   <div class="checkout">
     <p>Your total for this item is <%= totalPriceString %></p>
-    <button class="checkoutbtn btn btn-default" data-toggle="modal" data-target="#purchaseAlert">Proceed to Checkout</button>
+    <button class="checkoutbtn btn btn-default" data-toggle="modal" data-target="#purchaseAlert<%= item.escape('id') %>">Proceed to Checkout</button>
   </div>
 
 </div>
 
-<div id="purchaseAlert" class="modal fade" role="dialog">
+<div id="purchaseAlert<%= item.escape('id') %>" class="modal fade" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">

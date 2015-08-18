@@ -52,6 +52,14 @@ ArtisanStyle.Routers.Router = Backbone.Router.extend({
     }
   },
 
+  searchIndex: function () {
+    var items = new ArtisanStyle.Collections.Items();
+    var searchString = $(".searchbox").val();
+    items.fetch({data: {search: searchString}, processData: true });
+    var indexView = new ArtisanStyle.Views.SearchIndex({ searchItems: items });
+    this._swapView(indexView);
+  },
+
   _swapView: function (view) {
     this._currentView && this._currentView.remove();
     this._currentView = view;

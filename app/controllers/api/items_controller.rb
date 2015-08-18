@@ -4,8 +4,9 @@ class Api::ItemsController < ApplicationController
     if params[:query].present?
       params[:query].map! { |x| x.to_i }
       @items = Item.where(:id => params[:query])
+    elsif params[:search].present?
+      @items = Item.where("name ~ ?", params[:search])
     else
-      # @items = Item.where("")
       @items = Item.all
     end
     render :index

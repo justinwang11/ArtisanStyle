@@ -5,7 +5,9 @@ ArtisanStyle.Views.CartThumb = Backbone.View.extend({
   events: {
     "click .checkoutbtn": "checkout",
     "click .removeFromCart": "removeItem",
-    "click .closePurchase": "closeAndRefresh"
+    "click .closePurchase": "closeAndRefresh",
+    "click .modal": "closeAndRefresh",
+    "click .modal-header": "prevent"
   },
 
   initialize: function () {

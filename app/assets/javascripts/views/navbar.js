@@ -2,7 +2,8 @@ ArtisanStyle.Views.Navbar = Backbone.View.extend({
   template: JST['navbar'],
 
   events: {
-    "click .signoutbtn": "logoutUser"
+    "click .signoutbtn": "logoutUser",
+    "click .searchbutton": "search"
   },
 
   initialize: function (options) {
@@ -23,8 +24,19 @@ ArtisanStyle.Views.Navbar = Backbone.View.extend({
     type: 'DELETE',
     success: function () {
         window.location = '/';
-    }
-});
+      }
+    });
+  },
+
+  search: function (event) {
+    event.preventDefault();
+    var items = new ArtisanStyle.Collections.Items();
+    var searchString = $(".searchbox").val();
+    items.fetch({data: {search: searchString}, processData: true });
+    var indexView = new ArtisanStyle.Views.SearchIndex({ searchItems: items });
+    this._currentView && this._currentView.remove();
+    this._currentView = indexView;
+    $("#main").html(indexView.render().$el);
   }
 
 });
