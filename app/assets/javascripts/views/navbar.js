@@ -3,7 +3,8 @@ ArtisanStyle.Views.Navbar = Backbone.View.extend({
 
   events: {
     "click .signoutbtn": "logoutUser",
-    "click .searchbutton": "search"
+    "click .searchbutton": "search",
+    "keyup .searchbox": "search"
   },
 
   initialize: function (options) {

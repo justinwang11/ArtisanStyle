@@ -54,16 +54,35 @@ ArtisanStyle.Routers.Router = Backbone.Router.extend({
     }
   },
 
-  // favoriteItems: function () {
-  //   var items = new ArtisanStyle.Collections.Items();
-  //
-  //   items.fetch({data: {itemParams: a}, processData: true});
-  // },
-  //
-  // favoriteShops: function () {
-  //   var shops = new ArtisanStyle.Collections.Shops();
-  //   shops.fetch({data: {shopParams: b}, processData: true});
-  // },
+  favoriteItems: function () {
+    var items = new ArtisanStyle.Collections.Items();
+    var favItems = [];
+    var favView;
+    items.fetch({
+      success: function () {
+        favItems = items.filter(function(item) {
+          return item.isFavorited() === true;
+        });
+        favView = new ArtisanStyle.Views.FavItems({ collection: favItems});
+        this._swapView(favView);
+      }.bind(this)
+    });
+  },
+
+  favoriteShops: function () {
+    var shops = new ArtisanStyle.Collections.Shops();
+    var favShops;
+    var favView;
+    shops.fetch({
+      success: function () {
+        favShops = shops.filter(function(shop) {
+          return shop.isFavorited() === true;
+        });
+        favView = new ArtisanStyle.Views.FavShops({ collection: favShops});
+        this._swapView(favView);
+      }.bind(this)
+    });
+  },
 
   _swapView: function (view) {
     this._currentView && this._currentView.remove();
