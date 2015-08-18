@@ -18,20 +18,19 @@
   margin-right: -1000px;
 }
 
-.shopbanner p {
+.shopbanner a {
   height: 50px;
   width: 100%;
   float: left;
-  margin-top: 40px;
+  margin-top: 140px;
   margin-left: 20px;
   font-family: Roboto;
   color: #FFF;
   font-size: 36px;
 }
 
-.shopbanner button {
-  margin-left: 20px;
-  margin-top: 50px;
+.shopbanner a:hover {
+  color: #FFF;
 }
 
 .itemdiv {
@@ -73,6 +72,10 @@
   background-color: #72CD58;
   color: #FFF;
   width: 100%;
+}
+
+.itemdiv .toggleFavoriteItem {
+  margin-top: 15px;
 }
 
 .shoppingcart {

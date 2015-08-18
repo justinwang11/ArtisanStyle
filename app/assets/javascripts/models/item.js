@@ -13,10 +13,11 @@ ArtisanStyle.Models.Item = Backbone.Model.extend({
     return !this.favorite().isNew();
   },
 
-  parse: function(response) {
-    if (response.favorite) {
-      this.favorite().set(response.favorite);
+  parse: function (payload) {
+    if (payload.favorite) {
+      this.favorite().set(payload.favorite);
+      delete payload.favorite;
     }
-    return response;
-  },
+    return payload;
+  }
 });

@@ -3,11 +3,13 @@ ArtisanStyle.Views.ItemShow = Backbone.View.extend({
   template: JST['items/show'],
 
   events: {
-    "click .addtocart": "addItem"
+    "click .addtocart": "addItem",
+    "click .toggleFavoriteItem": "toggleFavorite"
   },
 
   initialize: function () {
     this.listenTo(this.model, "sync", this.render);
+    this.listenTo(this.model.favorite(), 'change', this.render);
   },
 
   addItem: function (event) {
@@ -27,6 +29,28 @@ ArtisanStyle.Views.ItemShow = Backbone.View.extend({
       Cookies.set('ArtisanStyleCart', cookies);
     }
     Backbone.history.navigate("/cart", { trigger: true });
+  },
+
+  toggleFavorite: function(event) {
+    if (this.model.isFavorited()){
+      this.unfavoriteItem();
+    } else {
+      this.favoriteItem();
+    }
+  },
+
+  favoriteItem: function() {
+    this.model.favorite().save({
+      favoriteable_id: this.model.id,
+      favoriteable_type: "Item"
+    });
+    // this.model.set({numFavorites: this.model.get('numFavorites') + 1});
+  },
+
+  unfavoriteItem: function() {
+    this.model.favorite().destroy();
+    this.model.favorite().clear();
+    // this.model.set({numFavorites: this.model.get('numFavorites') - 1});
   },
 
   render: function () {

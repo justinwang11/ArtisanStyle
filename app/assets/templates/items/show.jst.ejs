@@ -1,13 +1,13 @@
 <div class="shopbanner">
     <img src="<%= item.escape('shop_banner') %>" />
-    <p><%= item.escape('shop_name') %></p>
-    <br>
-    <button class="btn btn-default">Favorite Shop</button>
+    <a href="#shops/<%= item.escape('shop_id') %>"><%= item.escape('shop_name') %></a>
 </div>
+
 <div class="itemdiv">
   <div class="itempic">
     <img src="<%= item.escape('images') %>"/>
   </div>
+
   <div class="iteminformation">
     <p><%= item.escape('name') %></p>
     <p>Sold By:
@@ -34,4 +34,11 @@
     <p><%= item.escape('description') %></p>
     <button class="addtocart btn btn-default">Add to Cart</button>
   </div>
+
+  <% if (item.isFavorited()) { %>
+    <button class="toggleFavoriteItem btn btn-default" style="color:red">&hearts; Add to Favorites</button>
+  <% } else { %>
+    <button class="toggleFavoriteItem btn btn-default" style="color:gray">&hearts; Add to Favorites</button>
+  <% } %>
+
 </div>
