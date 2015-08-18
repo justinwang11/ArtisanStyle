@@ -25,8 +25,10 @@ ArtisanStyle.Models.Shop = Backbone.Model.extend({
     if (payload.items) {
       this.items().set(payload.items, { parse: true });
       delete payload.items;
-    } else if (payload.favorite) {
+    }
+    if (payload.favorite) {
       this.favorite().set(payload.favorite);
+      delete payload.favorite;
     }
     return payload;
   }

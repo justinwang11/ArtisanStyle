@@ -1,4 +1,5 @@
 json.extract! @shop, :id, :name, :created_at, :updated_at
+favorite = @shop.favorites.find_by(user_id: current_user.id)
 if favorite
   json.favorite do
     json.extract! favorite, :id

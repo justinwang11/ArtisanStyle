@@ -10,7 +10,9 @@ ArtisanStyle.Routers.Router = Backbone.Router.extend({
     "": "shopsIndex",
     "shops/:id": "shopShow",
     "items/:id": "itemShow",
-    "cart": "cartIndex"
+    "cart": "cartIndex",
+    "favorites/items": "favoriteItems",
+    "favorites/shops": "favoriteShops"
   },
 
   shopsIndex: function () {
@@ -52,13 +54,16 @@ ArtisanStyle.Routers.Router = Backbone.Router.extend({
     }
   },
 
-  searchIndex: function () {
-    var items = new ArtisanStyle.Collections.Items();
-    var searchString = $(".searchbox").val();
-    items.fetch({data: {search: searchString}, processData: true });
-    var indexView = new ArtisanStyle.Views.SearchIndex({ searchItems: items });
-    this._swapView(indexView);
-  },
+  // favoriteItems: function () {
+  //   var items = new ArtisanStyle.Collections.Items();
+  //
+  //   items.fetch({data: {itemParams: a}, processData: true});
+  // },
+  //
+  // favoriteShops: function () {
+  //   var shops = new ArtisanStyle.Collections.Shops();
+  //   shops.fetch({data: {shopParams: b}, processData: true});
+  // },
 
   _swapView: function (view) {
     this._currentView && this._currentView.remove();
