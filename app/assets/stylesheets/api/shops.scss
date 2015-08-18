@@ -175,6 +175,16 @@ h1 {
   height: 100%;
 }
 
+.itempic button {
+  float: right;
+  display: none;
+  transform: translateY(-395%) translateX(-5%);
+}
+
+.itempic:hover button {
+  display: block;
+}
+
 .itemthumb .iteminfo {
   display: block;
   height: 40px;

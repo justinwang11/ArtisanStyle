@@ -6,6 +6,7 @@ class Item < ActiveRecord::Base
   belongs_to :shop
 
   has_many :images, as: :imageable
+  has_many :favorites, as: :favoriteable
 
   def price_string
     number_to_currency(price)

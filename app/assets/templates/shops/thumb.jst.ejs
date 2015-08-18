@@ -16,7 +16,11 @@
       <a class="shopname" href="#shops/<%= shop.escape('id') %>"><%= shop.escape('name') %></a>
     </span>
     <span class="shopfavorite">
-      <button class="btn btn-default">&hearts;</button>
+      <% if (shop.isFavorited()) { %>
+        <button class="toggleFavorite btn btn-default" style="color:red">&hearts;</button>
+      <% } else { %>
+        <button class="toggleFavorite btn btn-default" style="color:gray">&hearts;</button>
+      <% } %>
     </span>
   </div>
 </div>

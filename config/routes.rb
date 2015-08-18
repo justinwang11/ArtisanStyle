@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   namespace :api, defaults: { format: :json } do
     resources :shops, only: [:index, :show]
     resources :items, only: [:index, :show]
+    resources :favorites, only: [:create, :destroy]
   end
 
 end

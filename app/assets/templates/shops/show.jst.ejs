@@ -2,7 +2,11 @@
   <img src="<%= shop.escape('banner') %>"/>
   <div class='shopname'>
     <%= shop.escape('name') %>
-    <button class="togglesub btn btn-default">Add to Favorites</button>
+    <% if (shop.isFavorited()) { %>
+      <button class="toggleFavorite btn btn-default" style="color:red">&hearts; Favorite</button>
+    <% } else { %>
+      <button class="toggleFavorite btn btn-default" style="color:gray">&hearts; Favorite</button>
+    <% } %>
   </div>
 </div>
 

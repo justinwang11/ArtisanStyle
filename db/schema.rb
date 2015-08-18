@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150817200908) do
+ActiveRecord::Schema.define(version: 20150818193713) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,18 @@ ActiveRecord::Schema.define(version: 20150817200908) do
   end
 
   add_index "banners", ["shop_id"], name: "index_banners_on_shop_id", using: :btree
+
+  create_table "favorites", force: :cascade do |t|
+    t.integer  "user_id",           null: false
+    t.integer  "favoriteable_id",   null: false
+    t.string   "favoriteable_type", null: false
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+  end
+
+  add_index "favorites", ["favoriteable_id"], name: "index_favorites_on_favoriteable_id", using: :btree
+  add_index "favorites", ["user_id", "favoriteable_id", "favoriteable_type"], name: "by_uniqueness", unique: true, using: :btree
+  add_index "favorites", ["user_id"], name: "index_favorites_on_user_id", using: :btree
 
   create_table "images", force: :cascade do |t|
     t.string   "url",            null: false

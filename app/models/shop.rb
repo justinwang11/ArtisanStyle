@@ -5,7 +5,7 @@ class Shop < ActiveRecord::Base
   has_many :items
 
   has_many :images, as: :imageable
-
+  has_many :favorites, as: :favoriteable
   has_many :banners
 
   def image_url
