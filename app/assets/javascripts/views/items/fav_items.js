@@ -4,7 +4,6 @@ ArtisanStyle.Views.FavItems = Backbone.CompositeView.extend({
 
   initialize: function (options) {
     this.collection = new ArtisanStyle.Collections.Items(options.collection);
-    debugger;
     this.listenTo(this.collection, 'sync', this.render);
     this.listenTo(this.collection, 'add', this.addItem);
     this.collection.each(this.addItem.bind(this));
@@ -18,7 +17,6 @@ ArtisanStyle.Views.FavItems = Backbone.CompositeView.extend({
   },
 
   render: function () {
-    debugger;
     var content = this.template();
     this.$el.html(content);
     this.attachSubviews();

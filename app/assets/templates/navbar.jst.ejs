@@ -35,10 +35,47 @@
         </li>
       </ul>
 
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#favorites/items">Favorites</a></li>
-        <li><a href="#cart">Shopping Cart</a></li>
-        <li><a href="javascript:void(0)" class="signoutbtn"> Sign Out <%= ArtisanStyle.CURRENT_USER.username %></a></li>
+      <ul class="rightside-nav nav navbar-nav navbar-right">
+        <li class="navigationlistitem">
+          <a href="/">
+            <div class=imglink>
+              <img src="images/home_icon.jpeg">
+            </div>
+            <div class=textlink>
+              Home
+            </div>
+          </a>
+        </li>
+        <li class="navigationlistitem">
+          <a href="#favorites/items">
+            <div class=imglink>
+              <img src="images/favorites_icon.jpeg">
+            </div>
+            <div class=textlink>
+              Favorites
+            </div>
+          </a>
+        </li>
+        <li class="navigationlistitem">
+          <a href="#cart">
+            <div class=imglink>
+              <img src="images/cart_icon.jpeg">
+            </div>
+            <div class=textlink>
+              Cart
+            </div>
+          </a>
+        </li>
+        <li class=navigationlistitem>
+          <a href="javascript:void(0)" class="signoutbtn">
+            <div class="imglink">
+              <%= ArtisanStyle.CURRENT_USER.username %>
+            </div>
+            <div class="textlink">
+              Sign Out
+            </div>
+          </a>
+        </li>
       </ul>
 
     </div><!-- /.navbar-collapse -->

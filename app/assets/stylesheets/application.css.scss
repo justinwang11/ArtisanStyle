@@ -17,7 +17,7 @@
  @import "bootstrap";
 
 #nav {
-  overflow: hidden;
+  overflow: visible;
   background: #F5F5F1;
 }
 
@@ -27,12 +27,14 @@
   z-index: 100;
   border-bottom: 0 solid;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1),0 0 0 1px rgba(0, 0, 0, 0.05);
+  margin-bottom: 0;
 }
 
 .navbar-default .navbar-brand {
   font-family: Poiret One;
   font-size: 36px;
   color: #f45800;
+  transform: translateY(15px);
 }
 
 .container-fluid {
@@ -41,8 +43,31 @@
   background: #FFF;
 }
 
+.navbar li~li {
+  border-left: 1px solid #CCC;
+}
+
+.navbar-form .searchbox {
+  border-radius: 3px 0 0 3px;
+  width: 260px;
+  transform: translateY(15px)
+}
+
+.navbar-form button {
+  background: -webkit-linear-gradient(top, #98d0e0 2%, #68b8d1 8%, #4fa9c6 58%, #4fa9c6 95%, #4ca4c0);
+  border-color: #54acc7 #4ca0ba #398a9d;
+  color: white;
+  transform: translateX(-5px) translateY(15px);
+  border-radius: 0 3px 3px 0;
+}
+
+.navbar-form button:hover {
+  opacity: 0.8;
+  color: white;
+}
+
 .nav .browser {
-  position: absolute;
+  position: relative;
   margin-top: 8px;
   border-radius: 3px;
   border: 1px solid #E5E5E5;
@@ -53,23 +78,100 @@
   font-size: 14px;
   height: 34px;
   width: 78px;
+  transform: translateY(15px);
 }
 
-.navbar li~li {
-  border-left: 1px solid #CCC;
+.dropdown-menu {
+  position: absolute;
+  z-index: 1000;
 }
 
-.navbar-form button {
-  background: -webkit-linear-gradient(top, #98d0e0 2%, #68b8d1 8%, #4fa9c6 58%, #4fa9c6 95%, #4ca4c0);
-  border-color: #54acc7 #4ca0ba #398a9d;
-  color: white;
+.dropdown-menu li {
+  position: relative;
+  z-index: 500;
 }
 
-.navbar-form button:hover {
-  opacity: 0.8;
-  color: white;
+.dropdown-menu a {
+  position: relative;
+  z-index: 501;
+}
+
+.rightside-nav .navigationlistitem {
+  display: block;
+  height: 84px;
+  width: 80px;
+}
+
+.rightside-nav .imglink {
+  display: block;
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+
+.rightside-nav img {
+  height: 34px;
+  width: 34px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.navigationlistitem a {
+  display: block;
+  height: 100%;
+}
+
+.navigationlistitem .textlink {
+  display: block;
+  float: left;
+  width: 100%;
+  height: 25%;
+  font-size: 12px;
+  text-align: center;
 }
 
 #main {
   background: #F5F5F1;
+  min-height: 644px;
+}
+
+.favviewtoggle {
+  background: #F5F5F1;
+  position: relative;
+  width: 1000px;
+  height: 40px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.favviewtoggle h3 {
+  font-family: 'Merriweather', serif;
+  float: left;
+  font-size: 18px;
+  margin: 0;
+  transform: translateY(45%);
+}
+
+.favviewtoggle .favitemslink {
+  display: inline;
+  margin-left: 10px;
+  float: left;
+  color: #0192B5;
+  border: 1px solid #DDD;
+  padding: 6px 8px;
+  background: #FFF;
+  text-shadow: 0px 1px 0px #EEE;
+  border-radius: 5px 0 0 5px;
+}
+
+.favviewtoggle .favshopslink {
+  display: inline;
+  float: left;
+  color: #0192B5;
+  border: 1px solid #DDD;
+  border-left: 0 none;
+  background: #FFF;
+  padding: 6px 8px;
+  text-shadow: 0px 1px 0px #EEE;
+  border-radius: 0 5px 5px 0;
 }
