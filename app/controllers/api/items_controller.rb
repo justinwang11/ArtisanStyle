@@ -6,6 +6,8 @@ class Api::ItemsController < ApplicationController
       @items = Item.where(:id => params[:query])
     elsif params[:search].present?
       @items = Item.where("name ~ ?", params[:search])
+    elsif params[:category].present?
+      @items = Item.where("category = ?", params[:category])
     else
       @items = Item.all
     end

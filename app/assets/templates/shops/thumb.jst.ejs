@@ -1,6 +1,6 @@
 <div class="shop-card">
   <div class="item-pics">
-    <% items.each(function(item) { %>
+    <% _(items.first(4)).each(function(item) { %>
       <a href="#items/<%= item.escape('id') %>">
         <img class="item-img" src="<%= item.escape('images') %>"/>
       </a>

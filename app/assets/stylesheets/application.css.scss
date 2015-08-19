@@ -81,19 +81,19 @@
   transform: translateY(15px);
 }
 
+.navbar-nav > li > .dropdown-menu {
+  border-radius: 4px;
+}
+
 .dropdown-menu {
   position: absolute;
   z-index: 1000;
+  top: 70px;
 }
 
 .dropdown-menu li {
   position: relative;
   z-index: 500;
-}
-
-.dropdown-menu a {
-  position: relative;
-  z-index: 501;
 }
 
 .rightside-nav .navigationlistitem {

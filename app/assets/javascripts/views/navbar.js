@@ -4,7 +4,8 @@ ArtisanStyle.Views.Navbar = Backbone.View.extend({
   events: {
     "click .signoutbtn": "logoutUser",
     "click .searchbutton": "search",
-    "keyup .searchbox": "search"
+    "keyup .searchbox": "search",
+    "click .categsearch": "categSearch"
   },
 
   initialize: function (options) {
@@ -35,6 +36,20 @@ ArtisanStyle.Views.Navbar = Backbone.View.extend({
     var searchString = $(".searchbox").val();
     items.fetch({data: {search: searchString}, processData: true });
     var indexView = new ArtisanStyle.Views.SearchIndex({ searchItems: items });
+    this._currentView && this._currentView.remove();
+    this._currentView = indexView;
+    $("#main").html(indexView.render().$el);
+  },
+
+  categSearch: function (event) {
+    event.preventDefault();
+    var items = new ArtisanStyle.Collections.Items();
+    var category = $(event.currentTarget).find("a").text();
+    items.fetch({data: {category: category}, processData: true });
+    var indexView = new ArtisanStyle.Views.CategorySearch({
+      searchItems: items,
+      category: category
+    });
     this._currentView && this._currentView.remove();
     this._currentView = indexView;
     $("#main").html(indexView.render().$el);
