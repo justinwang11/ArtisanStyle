@@ -1,13 +1,13 @@
-<div class="head">
+<div class="shopbanner">
   <img src="<%= shop.escape('banner') %>"/>
-  <div class='shopname'>
+  <a href="#shops/<%= shop.escape('id') %>">
     <%= shop.escape('name') %>
-    <% if (shop.isFavorited()) { %>
-      <button class="toggleFavorite btn btn-default" style="color:red">&hearts; Favorite</button>
-    <% } else { %>
-      <button class="toggleFavorite btn btn-default" style="color:gray">&hearts; Favorite</button>
-    <% } %>
-  </div>
+  </a>
+  <% if (shop.isFavorited()) { %>
+    <button class="toggleFavorite btn btn-default" style="color:red">&hearts; Favorite</button>
+  <% } else { %>
+    <button class="toggleFavorite btn btn-default" style="color:gray">&hearts; Favorite</button>
+  <% } %>
 </div>
 
 <ul id="items">

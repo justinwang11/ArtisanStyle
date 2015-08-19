@@ -19,10 +19,10 @@ Image.create!([
 
 ])
 Item.create!([
-  {name: "Silver Phoenix Pocketwatch #8001", shop_id: 1, description: "Quartz movement, analog display. Case material: Stainless Steel", price: "10.0"},
-  {name: "Brass Pocketwatch with Copper Chain", shop_id: 1, description: "Manufactured in 1993, handmade, like new", price: "15.0"},
-  {name: "Eastern Style Pocketwatch with Pendant", shop_id: 1, description: "Intricately designed, burnished with honey glaze, infused with chai", price: "20.0"},
-  {name: "Victorian Pocketwatch with Vine Design", shop_id: 1, description: "Handmade in 1970, worn by Queen Elizabeth II, mannequin hand included", price: "25.0"},
+  {name: "Silver Phoenix Pocketwatch #8001", shop_id: 1, description: "Quartz movement, analog display. Case material: Stainless Steel", category: "Jewelry", price: "10.0"},
+  {name: "Brass Pocketwatch with Copper Chain", shop_id: 1, description: "Manufactured in 1993, handmade, like new", category: "Jewelry", price: "15.0"},
+  {name: "Eastern Style Pocketwatch with Pendant", shop_id: 1, description: "Intricately designed, burnished with honey glaze, infused with chai", category: "Jewelry", price: "20.0"},
+  {name: "Victorian Pocketwatch with Vine Design", shop_id: 1, description: "Handmade in 1970, worn by Queen Elizabeth II, mannequin hand included", category: "Jewelry", price: "25.0"},
 
   {name: "Harry Potter Replica Glasses", shop_id: 2, price: "22.0", description: "Handmade Harry Potter glasses based on the novel by JK Rowling. DISCLAIMER: Never worn by Daniel Radcliffe"},
   {name: "The Elder Wand", shop_id: 2, price: "45.0", description: "The original elder wand from the folk tale! Stolen from Dumbledore's grave. Repaired by me. Extremely powerful. Slight wear and tear"},
