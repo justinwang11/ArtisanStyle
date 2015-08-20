@@ -1,7 +1,9 @@
 class Api::ItemsController < ApplicationController
 
   def index
-    if params[:query].present?
+    if params[:search].present? && params[:category].present?
+      @items = Item.where("name ~ ?", params[:search]).where("category = ?", params[:category])
+    elsif params[:query].present?
       params[:query].map! { |x| x.to_i }
       @items = Item.where(:id => params[:query])
     elsif params[:search].present?

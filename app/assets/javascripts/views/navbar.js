@@ -35,10 +35,14 @@ ArtisanStyle.Views.Navbar = Backbone.View.extend({
     var items = new ArtisanStyle.Collections.Items();
     var searchString = $(".searchbox").val();
     items.fetch({data: {search: searchString}, processData: true });
-    var indexView = new ArtisanStyle.Views.SearchIndex({ searchItems: items });
+    var indexView = new ArtisanStyle.Views.SearchIndex({
+      searchItems: items,
+      searchString: searchString
+    });
     this._currentView && this._currentView.remove();
     this._currentView = indexView;
     $("#main").html(indexView.render().$el);
+    Backbone.history.navigate("/search?"+searchString, {trigger: true});
   },
 
   categSearch: function (event) {
