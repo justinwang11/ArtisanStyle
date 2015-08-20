@@ -136,6 +136,16 @@
   text-align: center;
 }
 
+.navigationlistitem .cartsize {
+  width: 18px;
+  height: 18px;
+  background-color: #6DAD3B;
+  color: #FFF;
+  transform: translateX(35px) translateY(-38px);
+  border-radius: 2px;
+  font-size: 11px;
+}
+
 #main {
   background: #F5F5F1;
   min-height: 644px;

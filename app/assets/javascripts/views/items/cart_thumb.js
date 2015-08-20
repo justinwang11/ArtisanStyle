@@ -16,7 +16,7 @@ ArtisanStyle.Views.CartThumb = Backbone.View.extend({
 
 
   render: function () {
-    var cookies = Cookies.getJSON('ArtisanStyleCart');
+    var cookies = CookieManager.getJSON('ArtisanStyleCart');
     var quantity = parseInt(cookies[this.model.id]);
     var totalPriceInt = quantity * parseInt(this.model.escape('price_string').slice(1));
     var totalPriceString = "$" + totalPriceInt.toString() + ".00";
@@ -34,9 +34,9 @@ ArtisanStyle.Views.CartThumb = Backbone.View.extend({
   checkout: function (event) {
     event.preventDefault();
     var item_id = this.model.get('id');
-    var cookies = Cookies.getJSON('ArtisanStyleCart');
+    var cookies = CookieManager.getJSON('ArtisanStyleCart');
     delete cookies[item_id];
-    Cookies.set('ArtisanStyleCart', cookies);
+    CookieManager.set('ArtisanStyleCart', cookies);
   },
 
   closeAndRefresh: function (event) {
@@ -48,19 +48,19 @@ ArtisanStyle.Views.CartThumb = Backbone.View.extend({
   changeQuantity: function (event) {
     event.preventDefault();
     var item_id = this.model.get('id');
-    var quantity = parseInt($(".itemquantity").val());
-    var cookies = Cookies.getJSON('ArtisanStyleCart');
+    var quantity = parseInt(this.$el.find(".itemquantity").val());
+    var cookies = CookieManager.getJSON('ArtisanStyleCart');
     cookies[item_id] = quantity;
-    Cookies.set('ArtisanStyleCart', cookies);
+    CookieManager.set('ArtisanStyleCart', cookies);
     Backbone.history.loadUrl(Backbone.history.fragment);
   },
 
   removeItem: function (event) {
     event.preventDefault();
     var item_id = this.model.get('id');
-    var cookies = Cookies.getJSON('ArtisanStyleCart');
+    var cookies = CookieManager.getJSON('ArtisanStyleCart');
     delete cookies[item_id];
-    Cookies.set('ArtisanStyleCart', cookies);
+    CookieManager.set('ArtisanStyleCart', cookies);
     Backbone.history.loadUrl(Backbone.history.fragment);
   }
 

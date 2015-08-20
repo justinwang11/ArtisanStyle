@@ -16,17 +16,17 @@ ArtisanStyle.Views.ItemShow = Backbone.View.extend({
     event.preventDefault();
     var item_id = this.model.get('id');
     var quantity = parseInt($(".itemquantity").val());
-    var cookies = Cookies.getJSON('ArtisanStyleCart');
+    var cookies = CookieManager.getJSON('ArtisanStyleCart');
     if (cookies === undefined ) {
       cookies = {};
       cookies[item_id] = quantity;
-      Cookies.set('ArtisanStyleCart', cookies);
+      CookieManager.set('ArtisanStyleCart', cookies);
     } else if (!cookies[item_id]) {
       cookies[item_id] = quantity;
-      Cookies.set('ArtisanStyleCart', cookies);
+      CookieManager.set('ArtisanStyleCart', cookies);
     } else {
       cookies[item_id] += quantity;
-      Cookies.set('ArtisanStyleCart', cookies);
+      CookieManager.set('ArtisanStyleCart', cookies);
     }
     Backbone.history.navigate("/cart", { trigger: true });
   },
