@@ -72,7 +72,9 @@
           <a href="#cart">
             <div class=imglink>
               <img src="images/cart_icon.jpeg">
-              <div class="cartsize"><%= cartSize %></div>
+              <% if (cartSize > 0) { %>
+                 <div class="cartsize"><%= cartSize %></div>
+              <% } %>
             </div>
             <div class=textlink>
               Cart

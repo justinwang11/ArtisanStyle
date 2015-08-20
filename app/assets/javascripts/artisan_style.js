@@ -12,7 +12,9 @@ window.ArtisanStyle = {
     var navbar = new ArtisanStyle.Views.Navbar({
       router: router
     });
+    var footer = new ArtisanStyle.Views.Footer();
     $("#nav").html(navbar.render().$el);
+    $("#footer").html(footer.render().$el);
     Backbone.history.start();
   }
 };

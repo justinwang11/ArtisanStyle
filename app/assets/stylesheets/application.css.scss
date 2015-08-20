@@ -192,3 +192,38 @@
   text-shadow: 0px 1px 0px #EEE;
   border-radius: 0 5px 5px 0;
 }
+
+#footer {
+  background: #F5F5F1;
+}
+
+.footercontainer {
+  display: block;
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+  height: 100px;
+  border-top: 1px solid #CCC;
+}
+
+.footercontainertainer {
+  display: block;
+  width: 600px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.footercontainertainer > div {
+  padding-left: 30px;
+  padding-right: 30px;
+  display: block;
+  position: relative;
+  float: left;
+  top: 50%;
+  color: #555;
+  transform: translateY(-50%);
+}
+
+.footercontainertainer > div > a {
+  color: #555;
+}
