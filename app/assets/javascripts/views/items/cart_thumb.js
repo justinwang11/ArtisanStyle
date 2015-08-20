@@ -6,11 +6,14 @@ ArtisanStyle.Views.CartThumb = Backbone.View.extend({
     "click .checkoutbtn": "checkout",
     "click .removeFromCart": "removeItem",
     "click .closePurchase": "closeAndRefresh",
-    "click .modal": "closeAndRefresh"
   },
 
   initialize: function () {
     this.listenTo(this.model, "sync", this.render);
+    setTimeout(function() {
+      $('#purchaseAlert'+this.model.id).on('hidden.bs.modal',
+      this.closeAndRefresh);
+    }.bind(this), 0);
   },
 
   render: function () {
@@ -25,6 +28,7 @@ ArtisanStyle.Views.CartThumb = Backbone.View.extend({
     });
     this.$el.html(content);
     this.$el.find("select.itemquantity").val(quantity);
+
     return this;
   },
 
