@@ -1,6 +1,7 @@
 User.create!([
-  {username: "Justin", password_digest: "$2a$10$pyrirVE82dh1aJNix1y6VuL4t.SDKsF9BgOpyFpLLbHCaIAHX5s1O", session_token: "CceEIrQrBF8rzqTEew9OBg"},
-  {username: "admin", password_digest: "$2a$10$iiJppBOL26YzYbf6NIxrN.bR6u.AlrPGGhPNM6tuFLhruR/kQ4ASC", session_token: "LVYiPhWqCyhgCspDXeTCHw"}
+  {username: "admin", password_digest: "$2a$10$iiJppBOL26YzYbf6NIxrN.bR6u.AlrPGGhPNM6tuFLhruR/kQ4ASC", session_token: "LVYiPhWqCyhgCspDXeTCHw"},
+  {username: "Justin", password_digest: "$2a$10$pyrirVE82dh1aJNix1y6VuL4t.SDKsF9BgOpyFpLLbHCaIAHX5s1O", session_token: "Wbl9uAt7hyxP4fgztp5oBQ"},
+  {username: "Guest", password_digest: "$2a$10$YSUZ92bHl.8IdTOer7uc2uEPKaobpCah4bD4LgJn0TdquE51YtdY.", session_token: "UeQx-TXWZqy7r9OdRmw8Rg"}
 ])
 
 Shop.create!([

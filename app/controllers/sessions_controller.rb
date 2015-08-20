@@ -3,11 +3,14 @@ class SessionsController < ApplicationController
   end
 
   def create
-    user = User.find_by_credentials(
-      params[:user][:username],
-      params[:user][:password]
-    )
-
+    if params[:submit] == "Sign In as Guest"
+      user = User.find(3)
+    else
+      user = User.find_by_credentials(
+        params[:user][:username],
+        params[:user][:password]
+      )
+    end
     if user
       sign_in(user)
       redirect_to root_url
