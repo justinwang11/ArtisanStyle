@@ -1,7 +1,7 @@
 <div class="itemthumb">
   <div class="itempic">
     <a href="#items/<%= item.escape('id') %>">
-      <img src="<%= item.escape('images') %>"/>
+      <img class=item-img" src="<%= item.escape('images') %>"/>
     </a>
     <% if (item.isFavorited()) { %>
       <button class="toggleFavoriteItem btn btn-default" style="color:red">&hearts;</button>

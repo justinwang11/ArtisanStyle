@@ -14,7 +14,10 @@ ArtisanStyle.Views.Navbar = Backbone.View.extend({
   },
 
   render: function () {
-    var cartSize = Object.keys(Cookies.getJSON('ArtisanStyleCart')).length;
+    var cartSize = 0;
+    if (Cookies.getJSON('ArtisanStyleCart')) {
+      cartSize = Object.keys(Cookies.getJSON('ArtisanStyleCart')).length;
+    }
     var content = this.template({ cartSize: cartSize });
     this.$el.html(content);
     return this;

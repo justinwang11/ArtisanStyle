@@ -211,3 +211,51 @@ Image.create!([
   {url: "https://img0.etsystatic.com/049/0/7458356/il_fullxfull.702222184_shpx.jpg", imageable_id: 59, imageable_type: "Item"},
   {url: "https://img0.etsystatic.com/058/1/10333017/il_fullxfull.751499978_awbg.jpg", imageable_id: 60, imageable_type: "Item"},
 ])
+
+Shop.create!([
+  {name: "Hand of Midas"}
+])
+Banner.create!([
+  {url: "http://cdn.idigitaltimes.com/sites/idigitaltimes.com/files/2015/07/14/dota-2-aegis-champions.jpg", shop_id: 8}
+])
+Item.create!([
+  {name: "Whiting and Davis Clutch, Gold Mesh ", shop_id: 8, price: "30.0", category: "Bags, Backpacks, & Purses", description: "This Whiting and Davis gold mesh purse is the perfect summer bag or use it for a night out. It has a detachable shoulder strap so you can carry it as a shoulder bag, or remove the strap to use as a clutch."},
+  {name: "iPhone 6 Case Gold", shop_id: 8, price: "14.0", category: "Mobile Accessories", description: "The material is durable, and the screen side edge of the case makes a small lip for protecting screen when your smartphone is placed on the screen. Those looking for ease of use and a slim stylish look prefer the plastic cases. "},
+  {name: "Gold and White Bridesmaid Clutches ", shop_id: 8, price: "150.0", category: "Bags, Backpacks, & Purses", description: "This listing is for 5 frame style clutches that will be made to order in the fabrics of your choice from the beautiful designer fabrics shown above in metallic gold. All clutches will be made with a coordinated interior to match your selected fabrics."},
+  {name: "Monogrammed Cross Body Clutch Purse", shop_id: 8, price: "40.0", category: "Bags, Backpacks, & Purses", description: "It opens up to give plenty of room for a large cell phone in a case, a small credit card wallet, and plenty other small must-haves (lip gloss, hand santizer, small hand lotion, etc)."},
+  {name: "SAKS FIFTH AVENUE Elegant Jeweled Tiger Gold Evening Bag", shop_id: 8, price: "115.0", category: "Bags, Backpacks, & Purses", description: "SAKS FIFTH AVENUE Elegant jeweled tiger gold evening bag c 1970. The opulent metallic handbag is embellished with a crystal jeweled gilt metal tiger clasp. The chic retro bag is covered with gold metallic vinyl with a textured satin finish."},
+])
+Image.create!([
+  {url: "http://i680.photobucket.com/albums/vv166/tusher143/MIDAS-1.jpg", imageable_id: 8, imageable_type: "Shop"},
+  {url: "https://img1.etsystatic.com/060/1/9576319/il_fullxfull.758932143_s0g9.jpg", imageable_id: 61, imageable_type: "Item"},
+  {url: "https://img1.etsystatic.com/028/1/6868561/il_fullxfull.580865007_edvp.jpg", imageable_id: 62, imageable_type: "Item"},
+  {url: "https://img0.etsystatic.com/072/0/5999696/il_fullxfull.805646086_khcv.jpg", imageable_id: 63, imageable_type: "Item"},
+  {url: "https://img0.etsystatic.com/048/0/8402960/il_fullxfull.708410342_a39g.jpg", imageable_id: 64, imageable_type: "Item"},
+  {url: "https://img1.etsystatic.com/021/0/6554149/il_fullxfull.475432009_h8ck.jpg", imageable_id: 65, imageable_type: "Item"},
+])
+
+Shop.create!([
+  {name: "Team Leviathan"}
+])
+Banner.create!([
+  {url: "", shop_id: 9}
+])
+Item.create!([
+  {name: "", shop_id: 9, price: "", category: "", description: ""},
+  {name: "", shop_id: 9, price: "", category: "", description: ""},
+  {name: "", shop_id: 9, price: "", category: "", description: ""},
+  {name: "", shop_id: 9, price: "", category: "", description: ""},
+  {name: "", shop_id: 9, price: "", category: "", description: ""},
+  {name: "", shop_id: 9, price: "", category: "", description: ""},
+  {name: "", shop_id: 9, price: "", category: "", description: ""},
+])
+Image.create!([
+  {url: "", imageable_id: 9, imageable_type: "Shop"},
+  {url: "", imageable_id: 66, imageable_type: "Item"},
+  {url: "", imageable_id: 67, imageable_type: "Item"},
+  {url: "", imageable_id: 68, imageable_type: "Item"},
+  {url: "", imageable_id: 69, imageable_type: "Item"},
+  {url: "", imageable_id: 70, imageable_type: "Item"},
+  {url: "", imageable_id: 71, imageable_type: "Item"},
+  {url: "", imageable_id: 72, imageable_type: "Item"},
+])
