@@ -9,15 +9,15 @@ ArtisanStyle is a clone of Etsy built on Rails and Backbone. Users can:
 
 <!-- This is a Markdown checklist. Use it to keep track of your progress! -->
 
-- [ ] Create accounts
-- [ ] Create sessions (log in)
-- [ ] Have a personalized feed of shops from subscriptions
-- [ ] View shops
-- [ ] View items in shops
-- [ ] Subscribe to shops
-- [ ] Add items to a shopping cart
-- [ ] Checkout
-- [ ] Search for shops and items by title and tag
+- [x] Create accounts
+- [x] Create sessions (log in)
+- [x] Have a personalized feed of shops from subscriptions
+- [x] View shops
+- [x] View items in shops
+- [x] Subscribe to shops
+- [x] Add items to a shopping cart
+- [x] Checkout
+- [x] Search for shops and items by title and tag
 
 ## Design Docs
 * [View Wireframes][views]
