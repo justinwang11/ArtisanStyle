@@ -238,24 +238,24 @@ Shop.create!([
   {name: "Team Leviathan"}
 ])
 Banner.create!([
-  {url: "", shop_id: 9}
+  {url: "http://orig11.deviantart.net/6bf8/f/2013/119/f/5/leviathan_by_iron_fox-d63j82l.jpg", shop_id: 9}
 ])
 Item.create!([
-  {name: "", shop_id: 9, price: "", category: "", description: ""},
-  {name: "", shop_id: 9, price: "", category: "", description: ""},
-  {name: "", shop_id: 9, price: "", category: "", description: ""},
-  {name: "", shop_id: 9, price: "", category: "", description: ""},
-  {name: "", shop_id: 9, price: "", category: "", description: ""},
-  {name: "", shop_id: 9, price: "", category: "", description: ""},
-  {name: "", shop_id: 9, price: "", category: "", description: ""},
+  {name: "Personalized Whiskey Decanter", shop_id: 9, price: "30.0", category: "Home & Living", description: "Enjoy your favorite whiskey the way it is meant to be savored with our custom engraved 27oz decanter. This glass decanter makes the perfect housewarming gift, anniversary gift for men, groomsmen gift, retirement gift, birthday gift, and more!"},
+  {name: "Tall Beer Mug (g273-1117)", shop_id: 9, price: "15.0", category: "Home & Living", description: "It's a towering tall with a grab-the-gusto sized handle and enough capacity to hold a full liter of his favorite brew."},
+  {name: "3 Large Whiskey Rocks / Whiskey Stones", shop_id: 9, price: "9.0", category: "Home & Living", description: "3 Large Laser Engraved and Personalized Large Whiskey Rocks measuring approximately 1.25 cubed. Each Set of 3 Rocks ships with a Velvet Pouch for storage. Whiskey glass not included."},
+  {name: "Metal Caddy Tantalus Two Bottle Decanter Set", shop_id: 9, price: "28.0", category: "Home & Living", description: "Vintage Gold metal Tantalus with 2 matching bottle decanters with pour spouts and six frosted shot glasses. Display your spirits under lock and key. This set is in excellent condition with very little if any gold loss on the decanters, the holder is engraved on the front with black lettering saying Rye and Scotch."},
+  {name: "Mid Century Barware - Set of 6 Culver High Ball Tumblers Glasses", shop_id: 9, price: "20.0", category: "Home & Living", description: "Set of 6 Mid Century Cocktail Glasses. This is a fabulous set of classic mid century modern barware. HIgh ball glasses with a gold scroll pattern with blue azure glass. The glasses are signed Culver and the pattern is the Azure Scroll design."},
+  {name: "Assassin's Creed Necklace", shop_id: 9, price: "25.0", category: "Jewelry", description: "The necklace is approx. 1'' (2.5 cm) and it is hung up from a silver coated brass chain (nickel and lead free) with a total length of 22 inches. Longer or shorter chain lengths are available upon request, just leave a note at message during check out."},
+  {name: "Bioshock Infinite Necklace", shop_id: 9, price: "17.0", category: "Jewelry", description: "The Bird or the Cage? Perhaps the bird? Or, perhaps the cage? The bird is beautiful and the cage is somber, but there's something special about it. And why not both of them with this beautiful vintage style necklace, inspired by the famous video game Bioshock Infinite?"},
 ])
 Image.create!([
-  {url: "", imageable_id: 9, imageable_type: "Shop"},
-  {url: "", imageable_id: 66, imageable_type: "Item"},
-  {url: "", imageable_id: 67, imageable_type: "Item"},
-  {url: "", imageable_id: 68, imageable_type: "Item"},
-  {url: "", imageable_id: 69, imageable_type: "Item"},
-  {url: "", imageable_id: 70, imageable_type: "Item"},
-  {url: "", imageable_id: 71, imageable_type: "Item"},
-  {url: "", imageable_id: 72, imageable_type: "Item"},
+  {url: "https://pbs.twimg.com/profile_images/602520926232666112/JJne2sba.png", imageable_id: 9, imageable_type: "Shop"},
+  {url: "https://img0.etsystatic.com/076/2/9523834/il_fullxfull.814467854_ntvi.jpg", imageable_id: 66, imageable_type: "Item"},
+  {url: "https://img1.etsystatic.com/060/0/10424705/il_fullxfull.714278559_3qkh.jpg", imageable_id: 67, imageable_type: "Item"},
+  {url: "https://img1.etsystatic.com/052/0/7676661/il_fullxfull.724244175_ajwt.jpg", imageable_id: 68, imageable_type: "Item"},
+  {url: "https://img0.etsystatic.com/075/0/5341269/il_fullxfull.813869372_lf1r.jpg", imageable_id: 69, imageable_type: "Item"},
+  {url: "https://img0.etsystatic.com/054/0/8809393/il_fullxfull.748804274_es97.jpg", imageable_id: 70, imageable_type: "Item"},
+  {url: "https://img1.etsystatic.com/048/1/6894031/il_fullxfull.728675047_mh47.jpg", imageable_id: 71, imageable_type: "Item"},
+  {url: "https://img0.etsystatic.com/041/1/8134425/il_fullxfull.601302632_5ar5.jpg", imageable_id: 72, imageable_type: "Item"},
 ])
