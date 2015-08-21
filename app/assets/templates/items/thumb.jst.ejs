@@ -4,10 +4,13 @@
       <img class=item-img" src="<%= item.escape('images') %>"/>
     </a>
     <% if (item.isFavorited()) { %>
-      <button class="toggleFavoriteItem btn btn-default" style="color:red">&hearts;</button>
+      <% color = "red" %>
     <% } else { %>
-      <button class="toggleFavoriteItem btn btn-default" style="color:gray">&hearts;</button>
+      <% color = "gray" %>
     <% } %>
+      <button class="toggleFavoriteItem btn btn-default" style="color:<%= color %>">
+        &hearts;
+      </button>
   </div>
   <div class="iteminfo">
     <a class="itemlink" href="#items/<%= item.escape('id') %>"><%= item.escape('name') %></a>

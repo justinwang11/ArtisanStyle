@@ -21,7 +21,6 @@ ArtisanStyle.Views.ShopsIndex = Backbone.CompositeView.extend({
     });
     this.$el.html(content);
     this.attachSubviews();
-    debugger;
     return this;
   },
 

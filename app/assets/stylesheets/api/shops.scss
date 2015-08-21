@@ -50,12 +50,8 @@ h1 {
   float: left;
   margin: 30px;
   background: #FFF;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
 }
+
 
 .item-pics {
   display: block;
@@ -171,14 +167,13 @@ h1 {
 }
 
 .itempic button {
-  float: right;
-  display: none;
-  transform: translateY(-395%) translateX(-5%);
+  position: absolute;
+  opacity: 0;
+  top: 7px;
+  right: 7px;
 }
 
-.itempic:hover button {
-  display: block;
-}
+.itempic:hover button { opacity: 1; }
 
 .itemthumb .iteminfo {
   display: block;
