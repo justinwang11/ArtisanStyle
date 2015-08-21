@@ -64,16 +64,22 @@ h1 {
   border-bottom: 1px solid #CCC;
   position: relative;
   margin: 0 auto;
-  overflow: hidden;
 }
 
-.item-img {
+.item-image {
   display: block;
   height: 50%;
   width: 50%;;
   border: 0 none;
   position: relative;
   float: left;
+  overflow: hidden;
+}
+
+.item-img {
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
 }
 
 .item-img:hover {

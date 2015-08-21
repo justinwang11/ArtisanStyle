@@ -1,9 +1,11 @@
 <div class="shop-card">
   <div class="item-pics">
     <% _(items.first(4)).each(function(item) { %>
-      <a href="#items/<%= item.escape('id') %>">
-        <img class="item-img" src="<%= item.escape('images') %>"/>
-      </a>
+      <div class="item-image">
+        <a href="#items/<%= item.escape('id') %>">
+          <img class="item-img" src="<%= item.escape('images') %>"/>
+        </a>
+      </div>
     <% }); %>
   </div>
   <div class="shop-info">

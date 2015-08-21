@@ -161,3 +161,53 @@ Image.create!([
   {url: "https://img1.etsystatic.com/038/2/7732056/il_fullxfull.571226251_12qd.jpg", imageable_id: 46, imageable_type: "Item"},
   {url: "https://img1.etsystatic.com/056/1/9193000/il_fullxfull.704953591_iapk.jpg", imageable_id: 47, imageable_type: "Item"},
 ])
+
+Shop.create!([
+  {name: "WildChild Painters"}
+])
+Banner.create!([
+  {url: "http://www.jtec.be/admin/media/img/1372340793_banner_ink_and_paint.jpg", shop_id: 6}
+])
+Item.create!([
+  {name: "World Map Art on Canvas", shop_id: 6, price: "144.0", category: "Art", description: "Three panel Vintage World Map Art, Gallery Wrapped Canvas makes a beautiful statement on any home or office wall. Antique map print reproduction circa 1850."},
+  {name: "Abstract Painting Circles - Wood Slice ", shop_id: 6, price: "120.0", category: "Art", description: "Sliced maple wood tree branches attached to a dark brown wood panel. Painted a variety of shades of blue, a few greens and white. Other colors can be custom ordered."},
+  {name: "CANYON PAINTING DESERT ", shop_id: 6, price: "27.0", category: "Art", description: "TITLE:  Red Desert-scape  Utah. Oil Painting on loose Linen Canvas. Comes with a Certificate Of Authenticity. Frame not included. Signed by Artist/Seller."},
+  {name: "Metal Sculpture Wall Art, Oil Painting", shop_id: 6, price: "130.0", category: "Art", description: "This is a kind of the metal painting wall sculpture. it's visualised and created on the metal panel by the artists, who then employ the use of a special tool to grind and engrave the lines onto the panel then, in the end, they use the pigment to draw on it and finish it."},
+  {name: "Art Rainbow Painting Triptych Large ", shop_id: 6, price: "73.0", category: "Art", description: "Original landscape art for your home or business! Not a print. Upscale and modern, large beautiful handmade painting ready to hang right out of the box."},
+  {name: "TURTLE WATERCOLOR - sea life art", shop_id: 6, price: "47.0", category: "Art", description: "I hope you enjoy this sea turtle watercolor painting of a loggerhead turtle. Coming across these majestic sea creatures is an amazing experience! I hope this piece of artwork brings you as much joy as it gives me."},
+])
+Image.create!([
+  {url: "http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/glossy-black-3d-buttons-icons-sports-hobbies/044196-glossy-black-3d-button-icon-sports-hobbies-brush57.png", imageable_id: 6, imageable_type: "Shop"},
+  {url: "https://img1.etsystatic.com/060/1/6111470/il_fullxfull.749584751_seu1.jpg", imageable_id: 48, imageable_type: "Item"},
+  {url: "https://img0.etsystatic.com/000/0/5562980/il_fullxfull.339909470.jpg", imageable_id: 49, imageable_type: "Item"},
+  {url: "https://img0.etsystatic.com/004/0/5312870/il_fullxfull.376720656_mraa.jpg", imageable_id: 50, imageable_type: "Item"},
+  {url: "https://img1.etsystatic.com/032/0/7320112/il_fullxfull.631972895_dnif.jpg", imageable_id: 51, imageable_type: "Item"},
+  {url: "https://img1.etsystatic.com/000/0/5148741/il_fullxfull.256978821.jpg", imageable_id: 52, imageable_type: "Item"},
+  {url: "https://img1.etsystatic.com/040/2/7589903/il_fullxfull.640806791_n5n3.jpg", imageable_id: 53, imageable_type: "Item"},
+])
+
+Shop.create!([
+  {name: "RM Exquisite Creations"}
+])
+Banner.create!([
+  {url: "http://binarynote.com/demo/abhishek/wp-content/uploads/sites/12/2015/02/Wood-Plank-Wallpaper.jpg", shop_id: 7}
+])
+Item.create!([
+  {name: "Stylus - Touchscreen - Handmade", shop_id: 7, price: "7.0", category: "Mobile Accessories", description: "This item is a touch screen stylus for use with cell phones, tablets, and other touch-activated screens. The stylus body is turned from your choice of hardwood (Walnut, Zebrawood, Cherry, or Curly Maple)."},
+  {name: "Iphone Printed Case / Animal Print Case", shop_id: 7, price: "25.0", category: "Mobile Accessories", description: "An amazing new design case with animal print - a perfect accessory for your everyday look. The design is modern, cool and suitable for all ages. The material is very soft and pleasant to the hand. and of course you will be sure that your phone is well protected."},
+  {name: "Wooden Phone stand, Smartphone stand", shop_id: 7, price: "25.0", category: "Mobile Accessories", description: "Multiple wood (5-6), coating varnish or oil. Default - the size of fit for iphone (thin). The angle of inclination of 15 ° or 20 °. In the photo 15 °."},
+  {name: "Violin music mobile phone pendant", shop_id: 7, price: "14.0", category: "Mobile Accessories", description: "Handmade Mobile Charms, pendant strap Plexiglas in total approx. 12 cm long Small series"},
+  {name: "Pen Stylus Combo made with Spalted Maple", shop_id: 7, price: "30.0", category: "Mobile Accessories", description: "This handmade slimline pen stylus combo is made with Spalted Maple wood. It would make a great back to school or birthday gift. It has simple grain pattern that crosses through the light colored wood. It is finished with Gold plated hardware which gives it a classy finish. These pens are light and comfortable for everyday use."},
+  {name: "Kitchen tablet holder, ipad stand", shop_id: 7, price: "28.0", category: "Mobile Accessories", description: "Elegant and stylish holders for your smartphone and tablet. Size and convenient form allows to always be on hand. Perfect for your home or work, to use in the kitchen for viewing your recipes. Also a great way to listen to music on your tablet or watch TV!"},
+  {name: "Iron Man Tony Stark - Apple Macbook Laptop Decal", shop_id: 7, price: "6.0", category: "Mobile Accessories", description: "This Sticker can be easily applied and removed with no residue or glue left behind virtually to any flat surface... Your laptop, car, wall, glass etc."},
+])
+Image.create!([
+  {url: "https://s-media-cache-ak0.pinimg.com/736x/52/7e/fa/527efa2eb27e6137ee74d37043964028.jpg", imageable_id: 7, imageable_type: "Shop"},
+  {url: "https://img0.etsystatic.com/058/1/10534059/il_fullxfull.753941674_ebo2.jpg", imageable_id: 54, imageable_type: "Item"},
+  {url: "https://img0.etsystatic.com/063/0/9650245/il_fullxfull.775410788_grju.jpg", imageable_id: 55, imageable_type: "Item"},
+  {url: "https://img0.etsystatic.com/070/1/10278959/il_fullxfull.814740018_ag93.jpg", imageable_id: 56, imageable_type: "Item"},
+  {url: "https://img0.etsystatic.com/010/0/6278167/il_fullxfull.456650306_nor2.jpg", imageable_id: 57, imageable_type: "Item"},
+  {url: "https://img1.etsystatic.com/034/0/5676540/il_fullxfull.610910979_q8n9.jpg", imageable_id: 58, imageable_type: "Item"},
+  {url: "https://img0.etsystatic.com/049/0/7458356/il_fullxfull.702222184_shpx.jpg", imageable_id: 59, imageable_type: "Item"},
+  {url: "https://img0.etsystatic.com/058/1/10333017/il_fullxfull.751499978_awbg.jpg", imageable_id: 60, imageable_type: "Item"},
+])
