@@ -18,6 +18,12 @@ ArtisanStyle.Collections.Shops = Backbone.Collection.extend({
     }
 
     return shop;
-  }
+  },
+
+  parse: function(response) {
+    this.page = response.page_number;
+    this.total_pages = response.total_pages;
+    return response.models;
+  },
 
 });

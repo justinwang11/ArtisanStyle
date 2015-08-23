@@ -2,7 +2,6 @@ ArtisanStyle.Views.ShopsIndex = Backbone.CompositeView.extend({
   template: JST['shops/index'],
 
   initialize: function () {
-    // this.collection.each(this.addItem.bind(this));
     this.listenTo(this.collection, 'sync', this.render);
     this.listenTo(this.collection, 'add', this.addItem);
     this.collection.each(this.addItem.bind(this));
@@ -21,21 +20,22 @@ ArtisanStyle.Views.ShopsIndex = Backbone.CompositeView.extend({
     });
     this.$el.html(content);
     this.attachSubviews();
+    this.listenForScroll();
     return this;
   },
 
   listenForScroll: function () {
-    $('#main').off("scroll"); // remove previous listeners
+    $(window).off("scroll"); // remove previous listeners
     var throttledCallback = _.throttle(this.nextPage.bind(this), 200);
-    $('#main').on("scroll", throttledCallback);
+    $(window).on("scroll", throttledCallback);
   },
 
   nextPage: function () {
     var view = this;
-    if ($('#main').scrollTop() > $(document).height() - $('#main').height() - 50) {
-      if (view.collection.page_number < view.collection.total_pages) {
+    if ($(window).scrollTop() > $(document).height() - $(window).height() - 50) {
+      if (view.collection.page < view.collection.total_pages) {
         view.collection.fetch({
-          data: { page: view.collection.page_number + 1 },
+          data: { page: view.collection.page + 1 },
           remove: false
         });
       }

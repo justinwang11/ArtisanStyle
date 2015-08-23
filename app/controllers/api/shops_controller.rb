@@ -1,7 +1,7 @@
 class Api::ShopsController < ApplicationController
 
   def index
-    @shops = Shop.all
+    @shops = Shop.page(params[:page])
     render :index
   end
 

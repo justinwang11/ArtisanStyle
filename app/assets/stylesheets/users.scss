@@ -65,8 +65,8 @@ form {
   border: 0 none;
   border-bottom: 1px solid #CCC;
   border-radius: 1px;
-  color: #636363;
   height: 50px;
+  background: rgba(90, 88, 88, 0.2);
 }
 
 .password {
@@ -75,8 +75,24 @@ form {
   width: 100%;
   border: 0 none;
   border-radius: 1px;
-  color: #636363;
   height: 50px;
+  background: rgba(90, 88, 88, 0.2);
+}
+
+::-webkit-input-placeholder {
+   color: white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;
+}
+
+:-ms-input-placeholder {
+   color: white;
 }
 
 form .signupbtn {

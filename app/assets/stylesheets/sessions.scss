@@ -49,7 +49,6 @@ form {
   display: block;
   position: relative;
   height: 101px;
-  opacity: 0.4;
 }
 
 .buttons {
@@ -66,8 +65,8 @@ form {
   border: 0 none;
   border-bottom: 1px solid #CCC;
   border-radius: 1px;
-  color: #636363;
   height: 50px;
+  background: rgba(90, 88, 88, 0.2);
 }
 
 .password {
@@ -76,8 +75,24 @@ form {
   width: 100%;
   border: 0 none;
   border-radius: 1px;
-  color: #636363;
   height: 50px;
+  background: rgba(90, 88, 88, 0.2);
+}
+
+::-webkit-input-placeholder {
+   color: white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;
+}
+
+:-ms-input-placeholder {
+   color: white;
 }
 
 form .signinbtn {
@@ -110,5 +125,44 @@ form .registerbtn {
   border-radius: 1px;
   height: 40px;
   width: 100px;
+  color: #FFF;
+}
+
+.footer-landingrow {
+  background: rgba(90, 88, 88, 0.4);
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.footerlandingcontainer {
+  display: block;
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+  height: 100px;
+}
+
+.footerlandingcontainertainer {
+  display: block;
+  width: 600px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.footerlandingcontainertainer > div {
+  padding-left: 30px;
+  padding-right: 30px;
+  display: block;
+  position: relative;
+  float: left;
+  top: 50%;
+  color: #FFF;
+  transform: translateY(-50%);
+  font-size: 14px;
+}
+
+.footerlandingcontainertainer > div > a {
   color: #FFF;
 }
