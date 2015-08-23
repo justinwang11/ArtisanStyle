@@ -45,6 +45,12 @@ form {
   color: #FFF;
 }
 
+form .alert {
+  background: rgba(252, 253, 112, 0.5);
+  border: 3px solid #FFE719;
+  border-radius: 4px;
+}
+
 .inputs {
   display: block;
   position: relative;

@@ -9,9 +9,19 @@
     <h3>The world's handmade items are a click away</h3>
   </div>
 
+  <% if flash.now[:errors] %>
+    <% display = "block" %>
+  <% else %>
+    <% display = "none" %>
+  <% end %>
 
   <form action="<%= users_url %>" method="post">
     <%= auth_token_input %>
+
+    <div class="alert alert-warning" role="alert" style="display:<%= display %>">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <strong>Alert!</strong> <%= flash.now[:errors].join(", ") %>
+    </div>
 
     <div class="inputs">
       <input class="username" type="text" name="user[username]" placeholder="Username">
