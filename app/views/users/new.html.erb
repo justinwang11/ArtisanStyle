@@ -12,6 +12,7 @@
   <% if flash.now[:errors] %>
     <% display = "block" %>
   <% else %>
+    <% flash.now[:errors] = [] %>
     <% display = "none" %>
   <% end %>
 
