@@ -259,3 +259,73 @@ Image.create!([
   {url: "https://img1.etsystatic.com/048/1/6894031/il_fullxfull.728675047_mh47.jpg", imageable_id: 71, imageable_type: "Item"},
   {url: "https://img0.etsystatic.com/041/1/8134425/il_fullxfull.601302632_5ar5.jpg", imageable_id: 72, imageable_type: "Item"},
 ])
+
+Shop.create!([
+  {name: "Misunderstood Astronauts"}
+])
+Banner.create!([
+  {url: "http://www.ealuxe.com/wp-content/uploads/2015/02/fhkjashfdasjk.jpg", shop_id: 10}
+])
+Item.create!([
+  {name: "MadArt Hippie Bag Hobo Purse Crossbody Slouch Bag Gyspy Boho Fringe Bag", shop_id: 10, price: "54.0", category: "Bags, Backpacks, & Purses", description: "Crossbody Gyspy Fringe Bag in 'Twisting Love'. Unique, artsy and utterly boho chic. If you’re looking for an upscale, artsy bag with Bohemian flair then this is the perfect bag for you. The design motif was created by artist Megan Duncanson and printed on durable colorfast eco-canvas."},
+  {name: "Monogram Clutch", shop_id: 10, price: "19.0", category: "Bags, Backpacks, & Purses", description: "Latest Hot Fashion Accessory!! Great for Bridesmaids, Birthday or Christmas gifts. This cute monogrammed envelope purse is made of leather-like material these monogrammed purses make a great, unique bridesmaid gift, birthday gift, or teacher gifts! Embroidery is included!"},
+  {name: "Monogrammed Faux Leather Tote", shop_id: 10, price: "24.0", category: "Bags, Backpacks, & Purses", description: "This monogrammed pebble-textured imitation leather tote, is great for the gal that has more stuff to haul! Plenty of room for a smaller clutch, makeup bag, sweater, books, snacks and sippy cups if you are a mom on the go! We also love this for the professional woman - take along files, papers, portfolios and calendar in style. Use your own monogram, or embroider with your company's initials for meetings and sales calls."},
+  {name: "Wallet, Personalized Monogrammed ", shop_id: 10, price: "18.0", category: "Bags, Backpacks, & Purses", description: "Wallet, Personalized Monogrammed Wallet, Monogrammed Clutch, Purse, Bag, Genuine Leather Womens Wallet. I can engrave on the wallet whatever you want. I can use every fonts that you want. I can also engrave a logo, symbol or an image."},
+  {name: "Canvas Double Bicycle Pannier", shop_id: 10, price: "138.0", category: "Bags, Backpacks, & Purses", description: "Constructed from water resistant silicone coated black 20 ounce canvas, the double pannier features twin zipped pockets with storm flap closures, a vegetable tanned brown leather carry handle and matching brown leather trim. It also comes with a shoulder strap for easy transportation off your bike."},
+  {name: "Blue Backpack, Vegan leather backpack", shop_id: 10, price: "109.0", category: "Bags, Backpacks, & Purses", description: "This blue backpack is made of high quality eco leather. It's a very beautiful and fashionable large womens backpack. It's ideal if you want to combine style, functionality and eco sense! Follow the hot backpack trend with this extraordinary backpack!"},
+  {name: "Backpack for 22 inch Penny Skateboards", shop_id: 10, price: "22.0", category: "Bags, Backpacks, & Purses", description: "The new shoulder bag by Monark is the perfect, comfortable and stylish solution for transportation your plastic skateboard. It can be used over the shoulder as a shoulder bag or as a stylish fanny pack around the waist thanks to an adjustable strap."},
+  {name: "Sloth Backpack Canvas Screen Printed", shop_id: 10, price: "20.0", category: "Bags, Backpacks, & Purses", description: "A khaki/beige, 100% cotton canvas back pack/cinch sack that has been screen-printed with Chubby Buddha Sloth – the coolest sloth around! The image was drawn and hand printed by me using non-toxic, water based ink."},
+  {name: "Mint Striped Personalized Campus Backpack", shop_id: 10, price: "30.0", category: "Bags, Backpacks, & Purses", description: "ROOMY interior! Designed for older girls - middle school, high school and college age girls! Top has a magnetic closure flap which opens to a drawstring style opening. Two front pockets hold iPhones, smart phones, keys, make up, pencils, pens, calculators, small items."},
+  {name: "Caramel Orange Tangerine Leather Duffel Kit Gym", shop_id: 10, price: "67.0", category: "Bags, Backpacks, & Purses", description: "Dimensions:
+-Width: 18 inches / 45 cm
+-Height: 11 inches / 28 cm
+-Depth: 11 inches / 28 cm
+
+Features:
+- 4 outside zippered compartments
+-Shoulder strap length: 55 inches (140 cm)
+-Shoulder strap width: 1 inch (2.5 cm)
+-Removable adjustable shoulder strap
+-Multiple compartments to store your accessories and important papers."},
+  {name: 'Messenger Bag, Mens 15" laptop Messenger Bag', shop_id: 10, price: "135.0", category: "Bags, Backpacks, & Purses", description: "Show your attitude and professionalism with this messenger/laptop bag made from recycled suit coats and a woman's recycled plaid skirt. The bag has two exterior pockets under the front flap. The bag is lined with heavy twill cotton canvas."},
+])
+Image.create!([
+  {url: "http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons-256/simple-red-square-icons-business/128504-simple-red-square-icon-business-bag-paper1.png", imageable_id: 10, imageable_type: "Shop"},
+  {url: "https://img1.etsystatic.com/047/0/5135851/il_fullxfull.669150581_ncaj.jpg", imageable_id: 73, imageable_type: "Item"},
+  {url: "https://img1.etsystatic.com/047/0/9844821/il_fullxfull.691157669_s1fn.jpg", imageable_id: 74, imageable_type: "Item"},
+  {url: "https://img1.etsystatic.com/029/0/9386827/il_fullxfull.639249289_4uvp.jpg", imageable_id: 75, imageable_type: "Item"},
+  {url: "https://img1.etsystatic.com/060/0/7636363/il_fullxfull.715770559_r6qe.jpg", imageable_id: 76, imageable_type: "Item"},
+  {url: "https://img1.etsystatic.com/065/0/10124514/il_fullxfull.801017705_6aer.jpg", imageable_id: 77, imageable_type: "Item"},
+  {url: "https://img0.etsystatic.com/055/1/9109537/il_fullxfull.762859236_g5s2.jpg", imageable_id: 78, imageable_type: "Item"},
+  {url: "https://img1.etsystatic.com/064/0/7853243/il_fullxfull.775573271_1klw.jpg", imageable_id: 79, imageable_type: "Item"},
+  {url: "https://img0.etsystatic.com/057/1/6247823/il_fullxfull.703639704_cac5.jpg", imageable_id: 80, imageable_type: "Item"},
+  {url: "https://img1.etsystatic.com/076/0/5180000/il_fullxfull.805324399_ro4z.jpg", imageable_id: 81, imageable_type: "Item"},
+  {url: "https://img1.etsystatic.com/049/1/7920777/il_fullxfull.699216457_9i1o.jpg", imageable_id: 82, imageable_type: "Item"},
+  {url: "https://img1.etsystatic.com/060/0/5691934/il_fullxfull.712904543_fds2.jpg", imageable_id: 83, imageable_type: "Item"},
+])
+
+Shop.create!([
+  {name: "Summer Nights Photography"}
+])
+Banner.create!([
+  {url: "http://i.imgur.com/AmWThvw.jpg", shop_id: 11}
+])
+Item.create!([
+  {name: "Sunflowers Photo, Nature Photography", shop_id: 11, price: "13.0", category: "Art", description: "Printed on professional, acid free, archival paper, packaged in an archival sleeve and shipped in a rigid kraft mailer. We use recycled and/or eco friendly materials whenever possible."},
+  {name: "Jellyfish, Jellyfish Photography, Picture of Jellyfish", shop_id: 11, price: "15.0", category: "Art", description: "Printed on quality photo paper with a lustre finish. Frame and matting not included."},
+  {name: "Tulip Photo, Flower Photograph, Nature Photography", shop_id: 11, price: "17.0", category: "Art", description: "Title: after the rain. Printed on professional, acid free, archival paper, packaged in an archival sleeve and shipped in a rigid kraft mailer. I use recycled and/or eco friendly materials whenever possible."},
+  {name: "Nature photograph 'Magical night' twinkle lights", shop_id: 11, price: "20.0", category: "Art", description: "Listing is for one fine art print, borderless, unmatted and unframed 'Magical night' - A winter tree all decked out in white twinkle lights"},
+  {name: "Country Photography Sunrise ", shop_id: 11, price: "11.0", category: "Art", description: "All prints are unmatted and unframed, printed on high quality paper. There will be no watermark on prints you receive. They will be securely packed to reach you in their best condition."},
+  {name: "3 Panel Split (Triptych) Canvas Print of Trees in forest", shop_id: 11, price: "75.0", category: "Art", description: "3 Panel Split (Triptych) canvas print. A beautiful nature photography shot of trees in a forest. Hand stretched on 1.5 inch deep wooden stretcher bars. This giclee print is great for home, living room or office decor as well as interior design."},
+  {name: "Night Lights", shop_id: 11, price: "6.0", category: "Art", description: "This gorgeous night sky photograph is the perfect way to add depth to your home. It's also perfect for the nature lover in your life or to add a calming feel to your living room, office, or bedroom."},
+])
+Image.create!([
+  {url: "http://i.imgur.com/fIrl8mr.jpg", imageable_id: 11, imageable_type: "Shop"},
+  {url: "https://img1.etsystatic.com/031/0/5758283/il_fullxfull.531436893_svg0.jpg", imageable_id: 84, imageable_type: "Item"},
+  {url: "https://img0.etsystatic.com/036/0/7965474/il_fullxfull.625205502_9i1y.jpg", imageable_id: 85, imageable_type: "Item"},
+  {url: "https://img0.etsystatic.com/000/1/5551197/il_fullxfull.291323258.jpg", imageable_id: 86, imageable_type: "Item"},
+  {url: "https://img1.etsystatic.com/011/0/5561056/il_fullxfull.429889685_39j1.jpg", imageable_id: 87, imageable_type: "Item"},
+  {url: "https://img1.etsystatic.com/023/0/6039897/il_fullxfull.557777597_sqwn.jpg", imageable_id: 88, imageable_type: "Item"},
+  {url: "https://img0.etsystatic.com/047/0/10062363/il_fullxfull.677923844_49xd.jpg", imageable_id: 89, imageable_type: "Item"},
+  {url: "http://i.imgur.com/AmWThvw.jpg", imageable_id: 90, imageable_type: "Item"},
+])
