@@ -353,23 +353,23 @@ Image.create!([
 ])
 
 Shop.create!([
-  {name: ""}
+  {name: "MasoNry"}
 ])
 Banner.create!([
-  {url: "", shop_id: 13}
+  {url: "https://img0.etsystatic.com/007/1/5569900/il_fullxfull.362535420_ikm6.jpg", shop_id: 13}
 ])
 Item.create!([
-  {name: "", shop_id: 13, price: "", category: "", description: ""},
-  {name: "", shop_id: 13, price: "", category: "", description: ""},
-  {name: "", shop_id: 13, price: "", category: "", description: ""},
-  {name: "", shop_id: 13, price: "", category: "", description: ""},
-  {name: "", shop_id: 13, price: "", category: "", description: ""},
+  {name: "Mason Jar Shot Glasses - 10 pieces", shop_id: 13, price: "7.0", category: "Home & Living", description: "The mason jar shot glasses were manufactured with no lids, but I have gotten so many requests for lids for the shots that I have searched far and wide to find a fitting lid. This is not a mason jar lid, but a brass/gold or white lid that will fit the mason jar shots. These lids can turn the mini mason jar shots into great favor jars filled with candy or honey, or your favorite moonshine."},
+  {name: "Mason Jar Light Strand", shop_id: 13, price: "6.0", category: "Home & Living", description: "Our patented design of mason jar lights include: 10 half pint mason jars (with holes in the bottom for water to drain), 10 foot long stainless steel wire with attached silver mason jar lids, removable G-40 strand of lights with 10 bulbs"},
+  {name: "Mason jar lights, mason jar light, mason jar lamps", shop_id: 13, price: "30.0", category: "Home & Living", description: "What a great idea for a centerpiece. Light up your table with these mason jar lights or purchase the light strands separate and use anywhere you would like! Avilable as lighted lamps pint size mason quart size mason or lights sold separate. Fairy lights are battery opperated so they can easily be turned on and off no need to plug in."},
+  {name: "Dorm Decor - Gold Painted Ball Mason Jars", shop_id: 13, price: "12.0", category: "Home & Living", description: "Gold is a timeless classic that never goes out of style. Make any occasion elegant with these beautiful gold pint size mason jars. The paint is a shiny gold - but is NOT scratch-resistant."},
+  {name: "Mason Jar Chandelier", shop_id: 13, price: "350.0", category: "Home & Living", description: "This is a rustic mason jar chandelier. It is built to hang at about 48 inches from ceiling to bottom of fixture. The chandelier is made of reclaimed wood."},
 ])
 Image.create!([
-  {url: "", imageable_id: 13, imageable_type: "Shop"},
-  {url: "", imageable_id: 96, imageable_type: "Item"},
-  {url: "", imageable_id: 97, imageable_type: "Item"},
-  {url: "", imageable_id: 98, imageable_type: "Item"},
-  {url: "", imageable_id: 99, imageable_type: "Item"},
-  {url: "", imageable_id: 100, imageable_type: "Item"},
+  {url: "http://www.oldschoolmasonry.org/qa-qc-requirements-for-masonry-construction-webinar.jpg", imageable_id: 13, imageable_type: "Shop"},
+  {url: "https://img1.etsystatic.com/026/0/6908117/il_fullxfull.558246939_8ce7.jpg", imageable_id: 96, imageable_type: "Item"},
+  {url: "https://img1.etsystatic.com/000/0/5598577/il_fullxfull.249101807.jpg", imageable_id: 97, imageable_type: "Item"},
+  {url: "https://img1.etsystatic.com/067/0/10903422/il_fullxfull.772339709_s5r4.jpg", imageable_id: 98, imageable_type: "Item"},
+  {url: "https://img0.etsystatic.com/023/0/6779482/il_fullxfull.488031532_tmwc.jpg", imageable_id: 99, imageable_type: "Item"},
+  {url: "https://img1.etsystatic.com/024/0/9075533/il_fullxfull.566384015_6g1b.jpg", imageable_id: 100, imageable_type: "Item"},
 ])
