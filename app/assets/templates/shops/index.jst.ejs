@@ -8,21 +8,46 @@
 <nav>
   <div class="spacer"></div>
   <ul class="pagination">
+
+    <% if (this.collection.page === 1) {%>
     <li>
-      <a href="#home/<%= this.collection.page - 1 %>" class="previous" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
+      <a href="javascript:void(0)" class="previous" aria-label="Previous">
+        <span aria-hidden="true">&laquo; Previous</span>
       </a>
     </li>
-    <li><a href="#home/1" class="specificpage">1</a></li>
-    <li><a href="#home/2" class="specificpage">2</a></li>
-    <li><a href="#home/3" class="specificpage">3</a></li>
-    <li><a href="#home/4" class="specificpage">4</a></li>
-    <li><a href="#home/5" class="specificpage">5</a></li>
     <li>
       <a href="#home/<%= this.collection.page + 1 %>" class="next" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
+        <span aria-hidden="true">Next &raquo;</span>
       </a>
     </li>
+
+    <% } else if (this.collection.page === this.collection.total_pages) {%>
+
+    <li>
+      <a href="#home/<%= this.collection.page - 1 %>" class="previous" aria-label="Previous">
+        <span aria-hidden="true">&laquo; Previous</span>
+      </a>
+    </li>
+    <li>
+      <a href="javascript:void(0)" class="next" aria-label="Next">
+        <span aria-hidden="true">Next &raquo;</span>
+      </a>
+    </li>
+
+    <% } else { %>
+    <li>
+      <a href="#home/<%= this.collection.page - 1 %>" class="previous" aria-label="Previous">
+        <span aria-hidden="true">&laquo; Previous</span>
+      </a>
+    </li>
+    <li>
+      <a href="#home/<%= this.collection.page + 1 %>" class="next" aria-label="Next">
+        <span aria-hidden="true">Next &raquo;</span>
+      </a>
+    </li>
+
+    <% } %>
+
   </ul>
   <div class="spacer"></div>
 </nav>
