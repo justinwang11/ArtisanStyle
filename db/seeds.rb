@@ -329,3 +329,47 @@ Image.create!([
   {url: "https://img0.etsystatic.com/047/0/10062363/il_fullxfull.677923844_49xd.jpg", imageable_id: 89, imageable_type: "Item"},
   {url: "http://i.imgur.com/AmWThvw.jpg", imageable_id: 90, imageable_type: "Item"},
 ])
+
+Shop.create!([
+  {name: "Minimalist.theCity"}
+])
+Banner.create!([
+  {url: "http://www.wallpaperup.com/uploads/wallpapers/2013/03/24/60230/4fe9e4980b89e6c489eb1ade83632cc8.jpg", shop_id: 12}
+])
+Item.create!([
+  {name: "Geometric Necklace - Prism & Triangles ", shop_id: 12, price: "27.0", category: "Jewelry", description: "Prisms and geometric designs are in this season, and this necklace will instantly make any outfit look modern and hip!"},
+  {name: "Watercolor abstract, minimalist print", shop_id: 12, price: "13.0", category: "Art", description: "watercolor abstract, minimalist print, Watercolor wall art, Minimalist poster, Mid century modern, Pastel colors, Wall art, Abstract print"},
+  {name: "Star Wars A New Hope Inspired Minimalist Movie Poster Set", shop_id: 12, price: "43.0", category: "Art", description: "For serious Movie Fans, 3 beautiful quality digital poster prints. Set Includes - 3 Posters when combined that make one epic print from the opening scene of the original Star Wars Movie, A New Hope."},
+  {name: "Silver and Gold Minimalist Watch With Brown Genuine Leather", shop_id: 12, price: "44.0", category: "Jewelry", description: "Dapper Finish watches are timeless and classic watches that go with almost every outfit and style. The minimalist appearance makes this wrist watch a beautiful timepiece to add to your collection."},
+  {name: "Bar stud earrings - rose gold studs", shop_id: 12, price: "15.0", category: "Jewelry", description: "Bar stud earrings - ONE PAIR. They are polished shine and made for sensitive skin."},
+])
+Image.create!([
+  {url: "https://s-media-cache-ak0.pinimg.com/736x/9c/2b/4f/9c2b4fe45c9ff447986cf43751134de6.jpg", imageable_id: 12, imageable_type: "Shop"},
+  {url: "https://img1.etsystatic.com/000/0/6139191/il_fullxfull.264133813.jpg", imageable_id: 91, imageable_type: "Item"},
+  {url: "https://img0.etsystatic.com/049/0/10510833/il_fullxfull.731472200_qnr1.jpg", imageable_id: 92, imageable_type: "Item"},
+  {url: "https://img1.etsystatic.com/041/0/8880305/il_fullxfull.614891393_9p1x.jpg", imageable_id: 93, imageable_type: "Item"},
+  {url: "https://img1.etsystatic.com/056/0/10403930/il_fullxfull.750925287_mzou.jpg", imageable_id: 94, imageable_type: "Item"},
+  {url: "https://img1.etsystatic.com/061/6/7343675/il_fullxfull.776408033_plr5.jpg", imageable_id: 95, imageable_type: "Item"},
+])
+
+Shop.create!([
+  {name: ""}
+])
+Banner.create!([
+  {url: "", shop_id: 13}
+])
+Item.create!([
+  {name: "", shop_id: 13, price: "", category: "", description: ""},
+  {name: "", shop_id: 13, price: "", category: "", description: ""},
+  {name: "", shop_id: 13, price: "", category: "", description: ""},
+  {name: "", shop_id: 13, price: "", category: "", description: ""},
+  {name: "", shop_id: 13, price: "", category: "", description: ""},
+])
+Image.create!([
+  {url: "", imageable_id: 13, imageable_type: "Shop"},
+  {url: "", imageable_id: 96, imageable_type: "Item"},
+  {url: "", imageable_id: 97, imageable_type: "Item"},
+  {url: "", imageable_id: 98, imageable_type: "Item"},
+  {url: "", imageable_id: 99, imageable_type: "Item"},
+  {url: "", imageable_id: 100, imageable_type: "Item"},
+])
