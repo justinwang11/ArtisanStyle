@@ -20,25 +20,27 @@ ArtisanStyle.Views.ShopsIndex = Backbone.CompositeView.extend({
     });
     this.$el.html(content);
     this.attachSubviews();
-    this.listenForScroll();
+    // this.listenForScroll();
     return this;
   },
 
-  listenForScroll: function () {
-    $(window).off("scroll"); // remove previous listeners
-    var throttledCallback = _.throttle(this.nextPage.bind(this), 200);
-    $(window).on("scroll", throttledCallback);
-  },
+  // listenForScroll: function () {
+  //   $(window).off("scroll"); // remove previous listeners
+  //   var throttledCallback = _.throttle(this.nextPage.bind(this), 200);
+  //   $(window).on("scroll", throttledCallback);
+  // },
 
-  nextPage: function () {
-    var view = this;
-    if ($(window).scrollTop() > $(document).height() - $(window).height() - 50) {
-      if (view.collection.page < view.collection.total_pages) {
-        view.collection.fetch({
-          data: { page: view.collection.page + 1 },
-          remove: false
-        });
-      }
-    }
-  }
+  // nextPage: function () {
+  //   var view = this;
+  //   if ($(window).scrollTop() > $(document).height() - $(window).height() - 50) {
+  //     if (view.collection.page < view.collection.total_pages) {
+  //       view.collection.fetch({
+  //         data: { page: view.collection.page + 1 },
+  //         remove: false
+  //       });
+  //     }
+  //   }
+  // }
+
+
 });

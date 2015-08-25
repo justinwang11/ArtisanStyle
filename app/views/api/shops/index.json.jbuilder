@@ -16,5 +16,5 @@ json.models do
   end
 end
 
-json.page params[:page] || 1
+json.page params[:page]
 json.total_pages @shops.total_pages

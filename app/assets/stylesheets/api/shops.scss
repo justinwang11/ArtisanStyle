@@ -158,6 +158,26 @@ h1 {
   margin-right: 10px;
 }
 
+#main nav {
+  display: block;
+  position: relative;
+  height: 79px;
+}
+
+.spacer {
+  float: left;
+  display: block;
+  width: 572px;
+  height: 79px;
+}
+
+nav > .pagination {
+  display: block;
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #items {
   display: block;
   margin: 0 auto;

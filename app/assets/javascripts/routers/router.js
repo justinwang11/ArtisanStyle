@@ -8,6 +8,7 @@ ArtisanStyle.Routers.Router = Backbone.Router.extend({
 
   routes: {
     "": "shopsIndex",
+    "home/:id": "shopsIndex",
     "shops/:id": "shopShow",
     "items/:id": "itemShow",
     "cart": "cartIndex",
@@ -15,8 +16,9 @@ ArtisanStyle.Routers.Router = Backbone.Router.extend({
     "favorites/shops": "favoriteShops"
   },
 
-  shopsIndex: function () {
-    this.collection.fetch();
+  shopsIndex: function (id) {
+    this.collection.reset();
+    this.collection.fetch({ data: { page: id || 1 }});
     var indexView = new ArtisanStyle.Views.ShopsIndex({ collection: this.collection });
     this._swapView(indexView);
   },
