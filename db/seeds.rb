@@ -488,7 +488,7 @@ Shop.create!([
   {name: "Wheels of Bergen"}
 ])
 Banner.create!([
-  {url: "https://images.unsplash.com/photo-1415889678233-eb900aeee9e1?q=80&fm=jpg&s=28271b4feaab1e91007aeef1ace1bc8a", shop_id: 19}
+  {url: "https://images.unsplash.com/31/8jLdwLg6TLKIQfJcZgDb_Freedom_5.jpg?q=80&fm=jpg&s=e433b79789da6066d92e85a539e53f2c", shop_id: 19}
 ])
 Item.create!([
   {name: "Leather Macbook Pro Case", shop_id: 19, price: "49.0", category: "Mobile Accessories", description: "Our handmade laptop sleeves are made of brown leather. Our store will show you more gorgeous and unique collections."},
