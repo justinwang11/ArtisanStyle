@@ -21,9 +21,13 @@ ArtisanStyle.Collections.Shops = Backbone.Collection.extend({
   },
 
   parse: function(response) {
-    this.page = parseInt(response.page);
-    this.total_pages = parseInt(response.total_pages);
-    return response.models;
+    if (response.notModel) {
+      return response;
+    } else {
+      this.page = parseInt(response.page);
+      this.total_pages = parseInt(response.total_pages);
+      return response.models;
+    }
   },
 
 });

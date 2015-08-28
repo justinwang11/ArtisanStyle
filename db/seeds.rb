@@ -527,3 +527,26 @@ Image.create!([
   {url: "https://img1.etsystatic.com/073/0/7902096/il_fullxfull.806077737_mnby.jpg", imageable_id: 134, imageable_type: "Item"},
   {url: "https://img1.etsystatic.com/053/1/9247830/il_fullxfull.751998945_et8p.jpg", imageable_id: 135, imageable_type: "Item"},
 ])
+
+Favorite.create!([
+  {user_id: 3, favoriteable_id: 3, favoriteable_type: "Shop"},
+  {user_id: 3, favoriteable_id: 6, favoriteable_type: "Shop"},
+  {user_id: 3, favoriteable_id: 5, favoriteable_type: "Shop"},
+  {user_id: 3, favoriteable_id: 9, favoriteable_type: "Shop"},
+  {user_id: 3, favoriteable_id: 15, favoriteable_type: "Shop"},
+  {user_id: 3, favoriteable_id: 19, favoriteable_type: "Shop"},
+  {user_id: 3, favoriteable_id: 4, favoriteable_type: "Item"},
+  {user_id: 3, favoriteable_id: 8, favoriteable_type: "Item"},
+  {user_id: 3, favoriteable_id: 10, favoriteable_type: "Item"},
+  {user_id: 3, favoriteable_id: 12, favoriteable_type: "Item"},
+  {user_id: 3, favoriteable_id: 15, favoriteable_type: "Item"},
+  {user_id: 3, favoriteable_id: 16, favoriteable_type: "Item"},
+  {user_id: 3, favoriteable_id: 32, favoriteable_type: "Item"},
+  {user_id: 3, favoriteable_id: 35, favoriteable_type: "Item"},
+  {user_id: 3, favoriteable_id: 43, favoriteable_type: "Item"},
+  {user_id: 3, favoriteable_id: 47, favoriteable_type: "Item"},
+  {user_id: 3, favoriteable_id: 49, favoriteable_type: "Item"},
+  {user_id: 3, favoriteable_id: 77, favoriteable_type: "Item"},
+  {user_id: 3, favoriteable_id: 90, favoriteable_type: "Item"},
+  {user_id: 3, favoriteable_id: 131, favoriteable_type: "Item"},
+])

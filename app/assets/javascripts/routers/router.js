@@ -73,17 +73,9 @@ ArtisanStyle.Routers.Router = Backbone.Router.extend({
 
   favoriteShops: function () {
     var shops = new ArtisanStyle.Collections.Shops();
-    var favShops;
-    var favView;
-    shops.fetch({
-      success: function () {
-        favShops = shops.filter(function(shop) {
-          return shop.isFavorited() === true;
-        });
-        favView = new ArtisanStyle.Views.FavShops({ collection: favShops});
-        this._swapView(favView);
-      }.bind(this)
-    });
+    shops.fetch({ data: { isFavorited: true }, processData: true });
+    var favView = new ArtisanStyle.Views.FavShops({ collection: shops });
+    this._swapView(favView);
   },
 
   _swapView: function (view) {

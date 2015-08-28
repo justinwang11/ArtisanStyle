@@ -3,7 +3,7 @@ ArtisanStyle.Views.FavShops = Backbone.CompositeView.extend({
   template: JST['shops/fav'],
 
   initialize: function (options) {
-    this.collection = new ArtisanStyle.Collections.Shops(options.collection);
+    this.collection = options.collection;
     this.listenTo(this.collection, 'sync', this.render);
     this.listenTo(this.collection, 'add', this.addItem);
     this.collection.each(this.addItem.bind(this));
