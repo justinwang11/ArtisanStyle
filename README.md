@@ -1,11 +1,50 @@
 # ArtisanStyle
 
-[Link][heroku]
-
+[Live Link][heroku]
 [heroku]: https://artisanstyle.xyz/
 
+## Summary
+ArtisanStyle is a shopping web application built on Ruby on Rails, Backbone.js,
+PostgreSQL, and jQuery, and is modeled after Etsy.com.
+
+## Main Functionality
+Users can:
+* Create accounts and log in using custom authentication method that
+stores passwords in a BCrypt secret hash instead of plain text
+* Search for items by name
+* Filter items by category, with or without a search parameter
+* Add shops and items to their favorites, and view them separately
+* Add items to their cart, with varying quantities, and change quantities in
+the cart
+* Checkout and remove items their cart
+
+## Features
+* Polymorphic `Imageable` and `Favoriteable` associations
+* Custom AJAX requests for searching and filtering by category by sending data
+params to the Rails controllers
+* Pagination using Kaminari to optimize load times when viewing the shops index
+* Storing cart information in a JavaScript cookie to avoid extraneous AJAX
+requests
+* Custom module to trigger events in the cart cookie in order to attach jQuery
+events to changes in the cart. Code snippet here:
+```
+_.extend(window.CookieManager, Backbone.Events, {
+  set: function(key, value){
+    Cookies.set(key, value);
+    this.trigger("change");
+  },
+  getJSON: function(key){
+    return Cookies.getJSON(key);
+  }
+});
+```
+
+* Custom composite view module to attach and remove subviews on each page
+
+# Original Design Parameters
+
 ## Minimum Viable Product
-ArtisanStyle is a clone of Etsy built on Rails and Backbone. Users can:
+Users can:
 
 - [x] Create accounts
 - [x] Create sessions (log in)
