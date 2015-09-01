@@ -173,3 +173,9 @@ form .registerbtn {
 .footerlandingcontainertainer > div > a {
   color: #FFF;
 }
+
+@media only screen and (max-height: 550px) {
+  .footer-landingrow { 
+    display: none;
+  }
+}

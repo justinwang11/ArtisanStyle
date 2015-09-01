@@ -116,3 +116,9 @@ form .loginbtn {
   color: #FFF;
   padding-top: 9px;
 }
+
+@media only screen and (max-height: 550px) {
+  .footer-landingrow {
+    display: none;
+  }
+}
