@@ -29,7 +29,6 @@ ArtisanStyle.Views.SearchIndex = Backbone.CompositeView.extend({
   },
 
   refineSearch: function (event) {
-    debugger;
     event.preventDefault();
     var items = new ArtisanStyle.Collections.Items();
     var searchString = this.searchString;
