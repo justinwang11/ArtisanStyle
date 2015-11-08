@@ -98,7 +98,7 @@ Shop.create!([
   {name: "D-ZINE Leathers"}
 ])
 Banner.create!([
-  {url: "http://cindynrobert.com/wp-content/uploads/2015/04/banner.jpg", shop_id: 4}
+  {url: "http://gelilaleather.com/sites/all/themes/jollyany/demos/banner_shop_02.jpg", shop_id: 4}
 ])
 Item.create!([
   {name: "Genuine Mens Leather Messenger Shoulder Satchel Laptop Bag", shop_id: 4, price: "65.0", category: "Bags, Backpacks, & Purses", description: "This bag is 100% genuine goat leather messenger bag with a durable inner lining made of canvas."},
@@ -109,7 +109,7 @@ Item.create!([
   {name: "Vintage Genuine Coach Brown Leather Knapsack Shoulder Bag", shop_id: 4, price: "45.0", category: "Bags, Backpacks, & Purses", description: "Genuine vintage bag by Coach made in the United States with serial number L5D-9984"},
 ])
 Image.create!([
-  {url: "http://www.webtexture.net/wp-content/uploads/2011/03/Lether_banner.jpg", imageable_id: 4, imageable_type: "Shop"},
+  {url: "http://media.idownloadblog.com/wp-content/uploads/2012/10/Find-My-Friends-icon-full-size.jpg", imageable_id: 4, imageable_type: "Shop"},
   {url: "https://img0.etsystatic.com/053/1/9438620/il_fullxfull.763619136_qqgc.jpg", imageable_id: 26, imageable_type: "Item"},
   {url: "https://img1.etsystatic.com/072/0/7043029/il_fullxfull.808847687_stx1.jpg", imageable_id: 27, imageable_type: "Item"},
   {url: "https://img1.etsystatic.com/071/0/7763764/il_fullxfull.812988181_2yh3.jpg", imageable_id: 28, imageable_type: "Item"},
@@ -250,7 +250,7 @@ Item.create!([
   {name: "Bioshock Infinite Necklace", shop_id: 9, price: "17.0", category: "Jewelry", description: "The Bird or the Cage? Perhaps the bird? Or, perhaps the cage? The bird is beautiful and the cage is somber, but there's something special about it. And why not both of them with this beautiful vintage style necklace, inspired by the famous video game Bioshock Infinite?"},
 ])
 Image.create!([
-  {url: "https://pbs.twimg.com/profile_images/602520926232666112/JJne2sba.png", imageable_id: 9, imageable_type: "Shop"},
+  {url: "https://img0.etsystatic.com/030/0/6824854/il_340x270.654879250_eyyd.jpg", imageable_id: 9, imageable_type: "Shop"},
   {url: "https://img0.etsystatic.com/076/2/9523834/il_fullxfull.814467854_ntvi.jpg", imageable_id: 66, imageable_type: "Item"},
   {url: "https://img1.etsystatic.com/060/0/10424705/il_fullxfull.714278559_3qkh.jpg", imageable_id: 67, imageable_type: "Item"},
   {url: "https://img1.etsystatic.com/052/0/7676661/il_fullxfull.724244175_ajwt.jpg", imageable_id: 68, imageable_type: "Item"},
