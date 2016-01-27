@@ -143,7 +143,7 @@ Item.create!([
   {name: "Galaxy Crescent Moon Necklace Silver", shop_id: 5, price: "7.0", category: "Jewelry", description: "Vintage Galaxy Crescent Moon Necklace Silver Galactic Cosmic Stars Bib Pendant Jewelry Charm"},
 ])
 Image.create!([
-  {url: "http://julesnj.com//wp-content/uploads/2014/03/jewelry-box.jpg", imageable_id: 5, imageable_type: "Shop"},
+  {url: "https://img1.etsystatic.com/025/0/8381679/il_570xN.608658041_kk24.jpg", imageable_id: 5, imageable_type: "Shop"},
   {url: "https://img1.etsystatic.com/003/0/7788541/il_fullxfull.471199739_jceo.jpg", imageable_id: 32, imageable_type: "Item"},
   {url: "https://img0.etsystatic.com/057/0/8396303/il_fullxfull.743524936_8jrj.jpg", imageable_id: 33, imageable_type: "Item"},
   {url: "https://img0.etsystatic.com/041/1/9434350/il_fullxfull.640037072_o7ua.jpg", imageable_id: 34, imageable_type: "Item"},
