@@ -1,7 +1,7 @@
 # ArtisanStyle
 
 [Live Link][heroku]
-[heroku]: https://artisanstyle.xyz/
+[heroku]: http://artisanstyle.xyz/
 
 ## Summary
 ArtisanStyle is a shopping web application built on Ruby on Rails, Backbone.js,
